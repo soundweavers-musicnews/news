@@ -28,8 +28,9 @@ def _ensure_wav_ref_audio(ref_audio_path: Path, cache_dir: Path) -> Path:
     """Convert .m4a reference audio to 32kHz mono WAV for GPT-SoVITS stability."""
     if ref_audio_path.suffix.lower() == ".wav":
         return ref_audio_path
+    cache_dir = cache_dir.resolve()
     cache_dir.mkdir(parents=True, exist_ok=True)
-    wav_path = cache_dir / f"{ref_audio_path.stem}_ref.wav"
+    wav_path = (cache_dir / f"{ref_audio_path.stem}_ref.wav").resolve()
     if wav_path.exists() and wav_path.stat().st_mtime >= ref_audio_path.stat().st_mtime:
         return wav_path
     cmd = [

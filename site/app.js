@@ -56,7 +56,6 @@
     document.getElementById("featured-title").textContent = item.title_zh || item.title;
     document.getElementById("featured-summary").textContent = item.summary || "";
     document.getElementById("featured-tech").textContent = item.tech_analysis || "";
-    document.getElementById("featured-script").textContent = item.broadcast_script || "";
     document.getElementById("featured-link").href = item.url || "#";
 
     const hlEl = document.getElementById("featured-highlights");

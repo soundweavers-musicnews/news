@@ -126,8 +126,15 @@ def generate_placeholder_audio(output_wav: Path, duration: float = 30.0) -> Path
     return output_wav
 
 
-# Keep English brands & acronyms intact; only normalize numeric/polyphone edge cases + Traditional->Simplified
-POLYPHONE_FIXES = {
+# Keep English in English! Fix only G2P edge cases verified against GPT-SoVITS english.py:
+# - Digits glued to acronyms (e.g. VST2) drop the digit ("ph not in symbols: 2") -> "VST two"
+# - Unstressed leading schwa in AKAI (AH0 K AY1) gets swallowed after Chinese -> "Ah kai" (AA1 K AY1)
+# - Chinese numeric/polyphone edge cases + Traditional->Simplified for native jieba/g2pW accuracy
+TTS_FIXES = {
+    "AKAI": "Ah kai",
+    "Akai": "Ah kai",
+    "VST2": "VST two",
+    "VST3": "VST three",
     "16階音階": "十六段音阶",
     "16 階音階": "十六段音阶",
     "16階": "十六段",
@@ -147,9 +154,9 @@ def _to_simplified(text: str) -> str:
 
 
 def normalize_tts_text(text: str) -> str:
-    """Preserve English terms as-is; normalize Chinese numbers/polyphones and convert to Simplified for GPT-SoVITS."""
+    """Preserve English terms in English; fix G2P edge cases and convert Chinese to Simplified."""
     out = text
-    for src, dst in POLYPHONE_FIXES.items():
+    for src, dst in TTS_FIXES.items():
         out = out.replace(src, dst)
     out = re.sub(r"\s+", " ", out).strip()
     return _to_simplified(out)

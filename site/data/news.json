@@ -1,10 +1,46 @@
 {
-  "updated_at": "2026-11-25T07:30:09.647102+00:00",
+  "updated_at": "2026-11-25T07:38:55.592722+00:00",
   "site": {
     "title": "SoundWeavers 音樂科技新聞",
     "subtitle": "音樂科技、新產品與音訊技術深度速報"
   },
   "items": [
+    {
+      "id": "cc4f72e46da5",
+      "title": "Tubbutec TR-8oh8 Upgrade Adds MIDI, 11 Instruments And New Sequencer Tools To The Roland TR-808",
+      "url": "https://www.synthtopia.com/content/2026/11/24/tubbutec-tr-8oh8-roland-tr-808-upgrade/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-24T21:51:52+00:00",
+      "title_zh": "經典 TR-808 換腦升級！Tubbutec TR-8oh8 加入 MIDI 與 11 種新音色",
+      "category": "硬體合成器",
+      "summary": "德國改裝廠 Tubbutec 推出 TR-8oh8 升級套件，透過替換 Roland TR-808 原始 CPU，在完整保留經典類比發聲電路的前提下，為這台傳奇鼓機加入完整 MIDI 控制、11 種額外樂器音色與現代化音序器功能。",
+      "highlights": [
+        "100% 保留 Roland TR-808 原始類比發聲電路，不破壞經典暖厚音色",
+        "直接替換老舊 CPU，新增完整 MIDI 輸入輸出與現代 DAW 同步能力",
+        "額外解鎖 11 種新音色並大幅擴充 Pattern 與 Track 音序編排工具"
+      ],
+      "tech_analysis": "TR-8oh8 採用「控制層數位化、發聲層純類比」的經典混血改裝架構。由於原版 808 的 4-bit 微控制器早已停產且缺乏 MIDI，Tubbutec 以現代微控制器接管觸發脈衝（Trigger Pulse）與重音控制，不僅解決老機維修痛點，更在不介入類比音訊路徑的情況下，實現高精度時鐘同步、複雜節奏細分與即時演出控制。",
+      "broadcast_script": "隔壁織音人音樂科技速報！傳奇鼓機 Roland TR-808 也能現代化升級啦！德國廠牌 Tubbutec 推出全新 CPU 改裝套件，在完整保留經典純類比發聲電路的前提下，直接加入 MIDI 同步、十一種全新打擊樂器音色與進階音序器工具，讓老鼓機無縫接軌現代編曲工作流。想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Roland TR-808",
+        "Tubbutec",
+        "鼓機改裝",
+        "MIDI",
+        "類比合成器"
+      ],
+      "illustrations": [
+        "C:/Users/timmychi/.gemini/antigravity/brain/2d7c3439-1ee3-4ddf-81ee-d65ab7753817/tr808_sketchbook_illustration_v3_1795592140713.jpg",
+        "C:/Users/timmychi/.gemini/antigravity/brain/2d7c3439-1ee3-4ddf-81ee-d65ab7753817/drum_machine_cpu_upgrade_1795592109497.jpg",
+        "C:/Users/timmychi/.gemini/antigravity/brain/2d7c3439-1ee3-4ddf-81ee-d65ab7753817/midi_drum_machine_laptop_sketch_final_1795592148133.jpg",
+        "C:/Users/timmychi/.gemini/antigravity/brain/2d7c3439-1ee3-4ddf-81ee-d65ab7753817/percussion_sequencer_constellation_v2_1795592152494.jpg"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T07:36:50.860047+00:00",
+      "video_url": "./media/20261125_cc4f72e46da5.mp4",
+      "audio_url": "./media/20261125_cc4f72e46da5.wav",
+      "video_duration": 31.8,
+      "tts_engine": "GPT-SoVITS-v5turbo"
+    },
     {
       "id": "e849c59c5aff",
       "title": "AKAI MPC Sample Review: Make and Load Your Own Effects With Update 1.4!",

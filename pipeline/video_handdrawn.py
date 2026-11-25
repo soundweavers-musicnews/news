@@ -369,6 +369,55 @@ def _split_script_chunks(script: str) -> list[str]:
     return merged
 
 
+def _generate_lofi_bgm_wav(bgm_path: Path, duration: float, sr: int = 48000) -> Path:
+    """Synthesize a warm, copyright-free lo-fi electric-piano chord progression BGM."""
+    n_samples = int(math.ceil((duration + 0.5) * sr))
+    t = np.arange(n_samples, dtype=np.float32) / float(sr)
+
+    # Warm jazz/lo-fi progression: Cmaj9 -> Am9 -> Fmaj7 -> G6 (2 seconds per chord)
+    chords = [
+        [261.63, 329.63, 392.00, 493.88, 587.33],  # Cmaj9
+        [220.00, 261.63, 329.63, 392.00, 493.88],  # Am9
+        [174.61, 220.00, 261.63, 329.63, 392.00],  # Fmaj7
+        [196.00, 246.94, 293.66, 329.63, 392.00],  # G6
+    ]
+    chord_len = 2.5
+    signal = np.zeros(n_samples, dtype=np.float32)
+
+    for idx in range(int(math.ceil(duration / chord_len)) + 1):
+        start_s = int(idx * chord_len * sr)
+        end_s = min(n_samples, int((idx + 1) * chord_len * sr))
+        if start_s >= n_samples:
+            break
+        seg_t = t[start_s:end_s] - (idx * chord_len)
+        seg_dur = (end_s - start_s) / float(sr)
+        # Soft Rhodes-like attack + warm decay
+        env = np.minimum(1.0, seg_t / 0.08) * np.exp(-seg_t * 0.45) * np.minimum(1.0, (seg_dur - seg_t) / 0.12)
+        notes = chords[idx % len(chords)]
+        chord_wave = np.zeros_like(seg_t)
+        for freq in notes:
+            # Fundamental + subtle warm 2nd harmonic
+            chord_wave += np.sin(2.0 * np.pi * freq * seg_t) + 0.18 * np.sin(4.0 * np.pi * freq * seg_t)
+        chord_wave /= float(len(notes))
+        # Gentle bass root note
+        bass_freq = notes[0] / 2.0
+        chord_wave += 0.35 * np.sin(2.0 * np.pi * bass_freq * seg_t)
+        signal[start_s:end_s] += chord_wave * env
+
+    # Overall smooth fade-in / fade-out & gentle low volume (-19 dB under narrator)
+    master_env = np.minimum(1.0, t / 0.8) * np.minimum(1.0, np.maximum(0.0, (duration - t) / 1.2))
+    signal = signal * master_env * 0.14
+    pcm = np.clip(signal, -0.95, 0.95)
+    pcm_i16 = (pcm * 32767.0).astype(np.int16)
+
+    with wave.open(str(bgm_path), "wb") as wf:
+        wf.setnchannels(1)
+        wf.setsampwidth(2)
+        wf.setframerate(sr)
+        wf.writeframes(pcm_i16.tobytes())
+    return bgm_path
+
+
 def render_handdrawn_video(
     article: dict[str, Any],
     wav_path: Path,
@@ -532,11 +581,19 @@ def render_handdrawn_video(
         except Exception:
             ffmpeg_bin = "ffmpeg"
 
+        # Generate warm lo-fi background music & mix softly under the narrator voice
+        bgm_wav = tmp_path / "bgm.wav"
+        _generate_lofi_bgm_wav(bgm_wav, duration=duration)
+
         ffmpeg_cmd = [
             ffmpeg_bin, "-y",
             "-framerate", str(fps),
             "-i", str(tmp_path / "frame_%05d.jpg"),
             "-i", str(wav_path),
+            "-i", str(bgm_wav),
+            "-filter_complex", "[1:a]volume=1.0[v];[2:a]volume=0.85[b];[v][b]amix=inputs=2:duration=first:dropout_transition=2,alimiter=limit=0.95[aout]",
+            "-map", "0:v:0",
+            "-map", "[aout]",
             "-vf", "scale=720:1280",
             "-c:v", "libx264",
             "-preset", "veryfast",

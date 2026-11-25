@@ -143,16 +143,11 @@
           .map((h) => `<li>${escapeHtml(h)}</li>`)
           .join("");
 
-        const videoBtnHtml = item.video_url
-          ? `<button type="button" class="btn-play-video">▶ 播放 30s 手繪短片</button>`
-          : "";
-
         row.innerHTML = `
           <div class="news-row-top">
             <div class="news-row-meta">
               <span class="tag-pill">${escapeHtml(item.category || "音樂科技")}</span>
               <span class="meta-text">${escapeHtml(item.source || "")}</span>
-              ${videoBtnHtml}
             </div>
             <a class="source-link" href="${escapeHtml(item.url || "#")}" target="_blank" rel="noopener">原文報導 ↗</a>
           </div>
@@ -169,9 +164,10 @@
           </details>
         `;
 
-        const playBtn = row.querySelector(".btn-play-video");
-        if (playBtn) {
-          playBtn.addEventListener("click", () => {
+        if (item.video_url) {
+          row.style.cursor = "pointer";
+          row.addEventListener("click", (e) => {
+            if (e.target.closest("a, details, summary")) return;
             renderFeatured(item);
             window.scrollTo({ top: 0, behavior: "smooth" });
           });

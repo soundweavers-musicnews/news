@@ -291,7 +291,6 @@ def render_handdrawn_video(
         "-pix_fmt", "yuv420p",
         "-c:a", "aac",
         "-b:a", "128k",
-        "-shortest",
         "-movflags", "+faststart",
         str(output_mp4),
     ]

@@ -10,8 +10,8 @@ site:
 
 news:
   days_lookback: 7
-  max_articles_per_run: 1
-  videos_per_run: 1
+  max_articles_per_run: 2
+  videos_per_run: 2
   feeds:
     - name: "CDM (Create Digital Music)"
       url: "https://cdm.link/feed/"

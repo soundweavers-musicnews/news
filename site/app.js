@@ -32,7 +32,6 @@
   const renderFeatured = (item) => {
     const videoEl = document.getElementById("featured-video");
     const placeholderEl = document.getElementById("video-placeholder");
-    const audioEl = document.getElementById("featured-audio");
 
     if (item.video_url) {
       videoEl.src = item.video_url;
@@ -41,13 +40,6 @@
     } else {
       videoEl.classList.add("hidden");
       placeholderEl.classList.remove("hidden");
-    }
-
-    if (item.audio_url) {
-      audioEl.src = item.audio_url;
-      audioEl.classList.remove("hidden");
-    } else {
-      audioEl.classList.add("hidden");
     }
 
     document.getElementById("featured-category").textContent = item.category || "音樂科技";

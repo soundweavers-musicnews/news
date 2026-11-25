@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import math
+import re
 import struct
 import subprocess
 import time
@@ -155,15 +156,27 @@ def synthesize_tts(
             raise FileNotFoundError(f"Reference audio not found: {ref_src}")
         ref_wav = _ensure_wav_ref_audio(ref_src, cache_dir)
 
+        # Space out uppercase acronyms (e.g. SDK -> S D K, VST2 -> V S T 2) so TTS pronounces every letter cleanly
+        def _expand_acronym(m: re.Match[str]) -> str:
+            token = m.group(0)
+            if token in {"AKAI", "MIDI", "OLED", "MOOG", "KORG"}:
+                return token
+            return " ".join(list(token))
+
+        tts_text = re.sub(r"\b[A-Z]{2,5}[0-9]?\b", _expand_acronym, text)
+
         payload = {
-            "text": text,
-            "text_lang": tts_cfg.get("text_lang", "zh"),
+            "text": tts_text,
+            "text_lang": tts_cfg.get("text_lang", "auto"),
             "ref_audio_path": str(ref_wav),
             "prompt_text": tts_cfg.get("prompt_text", ""),
             "prompt_lang": tts_cfg.get("prompt_lang", "zh"),
             "text_split_method": "cut5",
             "batch_size": 1,
-            "speed_factor": float(tts_cfg.get("speed_factor", 1.05)),
+            "speed_factor": float(tts_cfg.get("speed_factor", 1.14)),
+            "fragment_interval": float(tts_cfg.get("fragment_interval", 0.15)),
+            "temperature": float(tts_cfg.get("temperature", 0.82)),
+            "top_k": int(tts_cfg.get("top_k", 12)),
             "media_type": "wav",
             "streaming_mode": False,
         }

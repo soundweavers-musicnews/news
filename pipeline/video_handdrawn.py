@@ -392,6 +392,16 @@ def render_handdrawn_video(
 
     paper_bg = _make_paper_background(width, height)
 
+    # Load optional custom hand-drawn illustrations tailored to the article
+    custom_imgs: list[Image.Image] = []
+    for p_str in article.get("illustrations") or []:
+        p_img = Path(p_str)
+        if p_img.exists():
+            try:
+                custom_imgs.append(Image.open(p_img).convert("RGB"))
+            except Exception:
+                pass
+
     title_zh = article.get("title_zh") or article.get("title", "音樂科技速報")
     category = article.get("category", "音樂科技")
     source = article.get("source", "SoundWeavers")
@@ -449,8 +459,34 @@ def render_handdrawn_video(
                     scene_local_p = min(1.0, (f - s_f) / max(1.0, fps * 0.9))
                     break
 
-            # 3. Multi-scene hand-drawn illustration stage
-            SCENES[scene_idx](draw, width // 2, 775, f, scene_local_p, amp)
+            # 3. Multi-scene hand-drawn illustration stage (custom article art with Ken Burns, or procedural fallback)
+            if custom_imgs:
+                img_idx = scene_idx % len(custom_imgs)
+                src_img = custom_imgs[img_idx]
+                box_w, box_h = 720, 440
+                bx0, by0 = (width - box_w) // 2, 555
+                # Subtle Ken Burns slow zoom (1.0 -> 1.07)
+                zoom = 1.0 + 0.07 * scene_local_p
+                sw, sh = src_img.size
+                # Center-crop to aspect ratio with zoom
+                target_ar = box_w / float(box_h)
+                if sw / float(sh) > target_ar:
+                    crop_h = sh / zoom
+                    crop_w = crop_h * target_ar
+                else:
+                    crop_w = sw / zoom
+                    crop_h = crop_w / target_ar
+                cx_i, cy_i = sw / 2.0, sh / 2.0
+                cropped = src_img.crop((cx_i - crop_w / 2, cy_i - crop_h / 2, cx_i + crop_w / 2, cy_i + crop_h / 2))
+                resized = cropped.resize((box_w, box_h), Image.Resampling.BILINEAR)
+                # Sketchbook shadow + frame + tape
+                draw.rounded_rectangle((bx0 + 10, by0 + 10, bx0 + box_w + 10, by0 + box_h + 10), radius=18, fill=GRID_DOT)
+                frame.paste(resized, (bx0, by0))
+                _sketch_rect(draw, (bx0, by0, bx0 + box_w, by0 + box_h), INK_DARK, width=5, seed=300 + img_idx, progress=1.0)
+                draw.rectangle((bx0 - 18, by0 - 12, bx0 + 54, by0 + 22), fill=WOOD_ACCENT)
+                draw.rectangle((bx0 + box_w - 54, by0 + box_h - 22, bx0 + box_w + 18, by0 + box_h + 12), fill=WOOD_ACCENT)
+            else:
+                SCENES[scene_idx](draw, width // 2, 775, f, scene_local_p, amp)
 
             # 4. Subtitle card (hand-drawn sketchbook note with tape corners)
             card_box = (96, 1055, width - 96, 1465)

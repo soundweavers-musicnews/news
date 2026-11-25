@@ -43,14 +43,14 @@ tts:
   # Exact transcript of 隔壁女孩_模型音檔參考.m4a (required by SoVITS v5turbo)
   prompt_text: "曼陀林琴身不大，指板有琴格，拿撥片彈奏，似乎就是一把比較小的吉他。"
   prompt_lang: "zh"
-  text_lang: "auto"
+  text_lang: "zh"
   # Will auto-detect custom weights inside GPT_weights_v5turbo / SoVITS_weights_v5turbo if present,
   # otherwise falls back to pretrained v5turbo weights:
   gpt_weights_dir: "GPT_weights_v5turbo"
   sovits_weights_dir: "SoVITS_weights_v5turbo"
   fallback_gpt_weights: "GPT_SoVITS/pretrained_models/s1v3.ckpt"
   fallback_sovits_weights: "GPT_SoVITS/pretrained_models/gsv-v5-pretrained/s2Gv5turbo.pth"
-  speed_factor: 1.08
+  speed_factor: 1.0
   fragment_interval: 0.15
   temperature: 0.75
   top_k: 10

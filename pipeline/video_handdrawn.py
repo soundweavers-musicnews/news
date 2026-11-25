@@ -448,15 +448,16 @@ def render_handdrawn_video(
                 draw.text((108, y_cursor), line, fill=INK_DARK, font=font_title)
                 y_cursor += 76
 
-            # Determine active subtitle chunk & scene
+            # Determine active subtitle chunk & scene (lead by 0.45s so subtitles never lag behind speech)
+            f_sub = min(total_frames - 1, f + int(round(fps * 0.45)))
             active_text = chunks[-1]
             scene_idx = 0
             scene_local_p = 1.0
             for s_f, e_f, txt, sc_i in chunk_bounds:
-                if s_f <= f < e_f:
+                if s_f <= f_sub < e_f:
                     active_text = txt
                     scene_idx = sc_i
-                    scene_local_p = min(1.0, (f - s_f) / max(1.0, fps * 0.9))
+                    scene_local_p = min(1.0, max(0.0, (f_sub - s_f) / max(1.0, fps * 0.9)))
                     break
 
             # 3. Multi-scene hand-drawn illustration stage (custom article art with Ken Burns, or procedural fallback)

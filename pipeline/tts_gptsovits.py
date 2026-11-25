@@ -172,6 +172,20 @@ def synthesize_tts(
         if resp.status_code != 200:
             raise RuntimeError(f"HTTP {resp.status_code}: {resp.text[:300]}")
         output_wav.write_bytes(resp.content)
+        pitch_shift = float(tts_cfg.get("pitch_shift", 1.0))
+        if abs(pitch_shift - 1.0) > 0.01:
+            shifted = output_wav.with_suffix(".shifted.wav")
+            subprocess.run(
+                [
+                    "ffmpeg", "-y", "-i", str(output_wav),
+                    "-af", f"asetrate=48000*{pitch_shift},aresample=48000",
+                    str(shifted),
+                ],
+                check=True,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+            shifted.replace(output_wav)
         print(f"[tts] Saved synthesized audio -> {output_wav}")
         return output_wav, True
     except Exception as exc:

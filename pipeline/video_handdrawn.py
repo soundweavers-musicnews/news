@@ -6,6 +6,7 @@ import math
 import random
 import re
 import subprocess
+import tempfile
 import wave
 from pathlib import Path
 from typing import Any
@@ -276,35 +277,9 @@ def render_handdrawn_video(
         chunk_bounds.append((cur_f, end_f, ch_text))
         cur_f = end_f
 
-    # Pipe raw RGB frames directly into ffmpeg
-    ffmpeg_cmd = [
-        "ffmpeg", "-y",
-        "-f", "rawvideo",
-        "-pix_fmt", "rgb24",
-        "-s", f"{width}x{height}",
-        "-r", str(fps),
-        "-i", "-",
-        "-i", str(wav_path),
-        "-c:v", "libx264",
-        "-threads", "1",
-        "-preset", "veryfast",
-        "-crf", "23",
-        "-pix_fmt", "yuv420p",
-        "-c:a", "aac",
-        "-b:a", "128k",
-        "-movflags", "+faststart",
-        str(output_mp4),
-    ]
     print(f"[video] Rendering {total_frames} frames ({duration:.1f}s @ {fps}fps) -> {output_mp4.name}")
-    proc = subprocess.Popen(
-        ffmpeg_cmd,
-        stdin=subprocess.PIPE,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-    )
-
-    try:
-        assert proc.stdin is not None
+    with tempfile.TemporaryDirectory(prefix="sw_frames_") as tmp_dir:
+        tmp_path = Path(tmp_dir)
         for f in range(total_frames):
             t_sec = f / float(fps)
             amp = float(env[f])
@@ -374,22 +349,32 @@ def render_handdrawn_video(
             draw.rectangle((100, 1770, 100 + int((width - 200) * prog), 1784), fill=INK_DARK)
             draw.text((100, 1810), "soundweavers-music.github.io/news", fill=INK_MUTED, font=font_en)
 
-            try:
-                proc.stdin.write(frame.tobytes())
-            except (BrokenPipeError, OSError):
-                break
+            frame.save(tmp_path / f"frame_{f:05d}.jpg", "JPEG", quality=88)
 
         try:
-            proc.stdin.close()
+            import imageio_ffmpeg
+            ffmpeg_bin = imageio_ffmpeg.get_ffmpeg_exe()
         except Exception:
-            pass
-        stderr = proc.stderr.read().decode("utf-8", errors="ignore") if proc.stderr else ""
-        ret = proc.wait()
-        if ret != 0:
-            raise RuntimeError(f"ffmpeg failed (code {ret}): {stderr[-400:]}")
-    finally:
-        if proc.poll() is None:
-            proc.kill()
+            ffmpeg_bin = "ffmpeg"
+
+        ffmpeg_cmd = [
+            ffmpeg_bin, "-y",
+            "-framerate", str(fps),
+            "-i", str(tmp_path / "frame_%05d.jpg"),
+            "-i", str(wav_path),
+            "-vf", "scale=720:1280",
+            "-c:v", "libx264",
+            "-preset", "veryfast",
+            "-crf", "23",
+            "-pix_fmt", "yuv420p",
+            "-c:a", "aac",
+            "-b:a", "128k",
+            "-movflags", "+faststart",
+            str(output_mp4),
+        ]
+        res = subprocess.run(ffmpeg_cmd, capture_output=True, text=True)
+        if res.returncode != 0:
+            raise RuntimeError(f"ffmpeg failed (code {res.returncode}): {res.stderr[-400:]}")
 
     print(f"[video] Done -> {output_mp4} ({duration:.1f}s)")
     return output_mp4, round(duration, 1)

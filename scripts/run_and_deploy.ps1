@@ -44,10 +44,10 @@ if (-not $GitCmd) {
 }
 
 if (-not (Test-Path (Join-Path $RepoRoot ".git"))) {
-    Write-Host "Initializing Git repo and linking remote https://github.com/soundweavers-musicnews.git ..."
+    Write-Host "Initializing Git repo and linking remote https://github.com/soundweavers-musicnews/news.git ..."
     git init
     git branch -M main
-    git remote add origin https://github.com/soundweavers-musicnews.git
+    git remote add origin https://github.com/soundweavers-musicnews/news.git
 }
 
 git add site/ config.yaml pipeline/ scripts/ README.md .gitignore

@@ -62,6 +62,6 @@ video:
   font_en: "C:/Windows/Fonts/segoeprb.ttf"
 
 deploy:
-  github_repo: "https://github.com/soundweavers-musicnews.git"
+  github_repo: "https://github.com/soundweavers-musicnews/news.git"
   branch: "main"
   target_url: "https://soundweavers-music.github.io/news/"

@@ -126,6 +126,52 @@ def generate_placeholder_audio(output_wav: Path, duration: float = 30.0) -> Path
     return output_wav
 
 
+# Music-tech TTS pronunciation normalization (applied ONLY to TTS input, never alters on-screen subtitles)
+BRAND_PRONUNCIATION = {
+    "AKAI": "阿開",
+    "Akai": "阿開",
+    "Roland": "羅蘭",
+    "Moog": "穆格",
+    "Korg": "寇格",
+    "Ableton": "艾伯頓",
+    "Steinberg": "史坦伯格",
+    "MIDI": "米迪",
+    "Pad": "打擊墊",
+    "Sample": "Sample",
+}
+
+POLYPHONE_FIXES = {
+    "16階音階": "十六段音階",
+    "16 階音階": "十六段音階",
+    "16階": "十六段",
+    "1.4": "一點四",
+    "VST2": "V S T 二",
+    "VST3": "V S T 三",
+    "Mk1": "一代",
+    "Mk2": "二代",
+}
+
+
+def normalize_tts_text(text: str) -> str:
+    """Normalize music-tech brands, acronyms, numbers, and polyphones for clean Chinese TTS."""
+    out = text
+    for src, dst in POLYPHONE_FIXES.items():
+        out = out.replace(src, dst)
+    for brand, pron in BRAND_PRONUNCIATION.items():
+        out = re.sub(rf"\b{re.escape(brand)}\b", pron, out)
+
+    # Space out remaining uppercase acronyms (e.g., SDK -> S D K, MPC -> M P C, DAW -> D A W)
+    def _expand_acronym(m: re.Match[str]) -> str:
+        token = m.group(0)
+        return " ".join(list(token))
+
+    out = re.sub(r"\b[A-Z]{2,5}[0-9]?\b", _expand_acronym, out)
+    # Add light pause around English words embedded in Chinese so leading vowels are never swallowed
+    out = re.sub(r"([\u4e00-\u9fff])([A-Za-z])", r"\1 \2", out)
+    out = re.sub(r"([A-Za-z])([\u4e00-\u9fff])", r"\1 \2", out)
+    return re.sub(r"\s+", " ", out).strip()
+
+
 def synthesize_tts(
     text: str,
     output_wav: Path,
@@ -156,14 +202,8 @@ def synthesize_tts(
             raise FileNotFoundError(f"Reference audio not found: {ref_src}")
         ref_wav = _ensure_wav_ref_audio(ref_src, cache_dir)
 
-        # Space out uppercase acronyms (e.g. SDK -> S D K, VST2 -> V S T 2) so TTS pronounces every letter cleanly
-        def _expand_acronym(m: re.Match[str]) -> str:
-            token = m.group(0)
-            if token in {"AKAI", "MIDI", "OLED", "MOOG", "KORG"}:
-                return token
-            return " ".join(list(token))
-
-        tts_text = re.sub(r"\b[A-Z]{2,5}[0-9]?\b", _expand_acronym, text)
+        tts_text = normalize_tts_text(text)
+        print(f"[tts] Normalized TTS text: {tts_text}")
 
         payload = {
             "text": tts_text,

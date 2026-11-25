@@ -153,11 +153,22 @@ def _to_simplified(text: str) -> str:
         return text
 
 
+DIGIT_ZH = str.maketrans("0123456789", "零一二三四五六七八九")
+
+
+def _expand_model_code(m: re.Match[str]) -> str:
+    """Expand hardware model codes like TR-808 -> TR 八零八, TB-303 -> TB 三零三."""
+    prefix, digits = m.group(1), m.group(2)
+    return f"{prefix} {digits.translate(DIGIT_ZH)}"
+
+
 def normalize_tts_text(text: str) -> str:
     """Preserve English terms in English; fix G2P edge cases and convert Chinese to Simplified."""
     out = text
     for src, dst in TTS_FIXES.items():
         out = out.replace(src, dst)
+    # Hardware model codes like TR-808, TB-303, TR-909, OP-1 -> read digits one by one
+    out = re.sub(r"\b([A-Za-z]{1,4})-([0-9]{1,5})\b", _expand_model_code, out)
     out = re.sub(r"\s+", " ", out).strip()
     return _to_simplified(out)
 

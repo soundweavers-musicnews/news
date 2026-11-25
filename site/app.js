@@ -43,7 +43,7 @@
     }
 
     document.getElementById("featured-category").textContent = item.category || "音樂科技";
-    document.getElementById("featured-date").textContent = toDateKey(item.published_at);
+    document.getElementById("featured-date").textContent = toDateKey(item.publish_at || item.published_at);
     document.getElementById("featured-source").textContent = item.source || "";
     document.getElementById("featured-title").textContent = item.title_zh || item.title;
     document.getElementById("featured-summary").textContent = item.summary || "";
@@ -61,7 +61,7 @@
 
   const renderMonthOptions = () => {
     const select = document.getElementById("month-filter");
-    const months = [...new Set(allItems.map((i) => toDateKey(i.published_at).slice(0, 7)))].sort().reverse();
+    const months = [...new Set(allItems.map((i) => toDateKey(i.publish_at || i.published_at).slice(0, 7)))].sort().reverse();
     select.innerHTML = `<option value="all">所有月份（${allItems.length} 則）</option>`;
     months.forEach((m) => {
       const opt = document.createElement("option");
@@ -96,7 +96,7 @@
 
     const q = searchQuery.trim().toLowerCase();
     const filtered = allItems.filter((item) => {
-      const dateKey = toDateKey(item.published_at);
+      const dateKey = toDateKey(item.publish_at || item.published_at);
       if (activeMonth !== "all" && !dateKey.startsWith(activeMonth)) return false;
       if (activeCategory !== "全部" && (item.category || "音樂科技") !== activeCategory) return false;
       if (!q) return true;
@@ -111,10 +111,10 @@
       return;
     }
 
-    // Group by date (descending)
+    // Group by publish date (descending)
     const groups = new Map();
     filtered.forEach((item) => {
-      const day = toDateKey(item.published_at);
+      const day = toDateKey(item.publish_at || item.published_at);
       if (!groups.has(day)) groups.set(day, []);
       groups.get(day).push(item);
     });
@@ -187,14 +187,30 @@
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       const data = await resp.json();
 
-      if (data.updated_at) {
-        document.getElementById("updated-at").textContent = `更新：${toDateKey(data.updated_at)}`;
-      }
+      const params = new URLSearchParams(window.location.search);
+      const previewAll = params.get("preview") === "all";
+      const nowMs = Date.now();
+      const rawItems = data.items || [];
 
-      allItems = data.items || [];
+      allItems = rawItems
+        .filter((item) => {
+          if (previewAll || !item.publish_at) return true;
+          const pubMs = new Date(item.publish_at).getTime();
+          return Number.isNaN(pubMs) || pubMs <= nowMs;
+        })
+        .sort((a, b) => {
+          const ta = new Date(a.publish_at || a.published_at || 0).getTime();
+          const tb = new Date(b.publish_at || b.published_at || 0).getTime();
+          return tb - ta;
+        });
+
       if (allItems.length) {
+        const latestDate = toDateKey(allItems[0].publish_at || allItems[0].published_at);
+        document.getElementById("updated-at").textContent = `更新：${latestDate}`;
         const featured = allItems.find((i) => i.video_url) || allItems[0];
         renderFeatured(featured);
+      } else if (data.updated_at) {
+        document.getElementById("updated-at").textContent = `更新：${toDateKey(data.updated_at)}`;
       }
       renderMonthOptions();
       renderFilters();

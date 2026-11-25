@@ -1,45 +1,443 @@
 {
-  "updated_at": "2026-11-25T07:38:55.592722+00:00",
+  "updated_at": "2026-11-25T11:48:44.400640+00:00",
   "site": {
     "title": "SoundWeavers 音樂科技新聞",
     "subtitle": "音樂科技、新產品與音訊技術深度速報"
   },
   "items": [
     {
-      "id": "cc4f72e46da5",
-      "title": "Tubbutec TR-8oh8 Upgrade Adds MIDI, 11 Instruments And New Sequencer Tools To The Roland TR-808",
-      "url": "https://www.synthtopia.com/content/2026/11/24/tubbutec-tr-8oh8-roland-tr-808-upgrade/",
-      "source": "Synthtopia",
-      "published_at": "2026-11-24T21:51:52+00:00",
-      "title_zh": "經典 TR-808 換腦升級！Tubbutec TR-8oh8 加入 MIDI 與 11 種新音色",
-      "category": "硬體合成器",
-      "summary": "德國改裝廠 Tubbutec 推出 TR-8oh8 升級套件，透過替換 Roland TR-808 原始 CPU，在完整保留經典類比發聲電路的前提下，為這台傳奇鼓機加入完整 MIDI 控制、11 種額外樂器音色與現代化音序器功能。",
+      "id": "daee606fe87e",
+      "title": "Fender’s monster Godzilla Telecaster is headed to a city near you – and it has an onboard distortion",
+      "url": "https://www.musicradar.com/guitars/electric-guitars/fenders-monster-godzilla-telecaster-is-headed-to-a-city-near-you-and-it-has-an-onboard-distortion",
+      "source": "MusicRadar Tech",
+      "published_at": "2026-11-25T08:00:00+00:00",
+      "publish_at": "2026-12-02T08:30:00+08:00",
+      "title_zh": "Fender 哥吉拉聯名 Telecaster 巡迴登場：琴身內建高增益破音電路",
+      "category": "產品發表",
+      "summary": "Fender 與哥吉拉的跨界企劃再出狂招！全新 Godzilla Telecaster 不僅擁有霸氣聯名塗裝，更直接在琴身內部塞入高增益運算放大器（Op-Amp）破音電路，撥開開關就能瞬間釋放怪獸級轟鳴音色。",
       "highlights": [
-        "100% 保留 Roland TR-808 原始類比發聲電路，不破壞經典暖厚音色",
-        "直接替換老舊 CPU，新增完整 MIDI 輸入輸出與現代 DAW 同步能力",
-        "額外解鎖 11 種新音色並大幅擴充 Pattern 與 Track 音序編排工具"
+        "Fender 推出哥吉拉聯名版 Telecaster，並將展開多城市巡迴展示",
+        "琴身直接內建高增益 Op-Amp 破音電路，免踩效果器就能瞬間切換重破音",
+        "同步呼應先前推出的哥吉拉高增益破音單顆與聯名 Stratocaster 系列"
       ],
-      "tech_analysis": "TR-8oh8 採用「控制層數位化、發聲層純類比」的經典混血改裝架構。由於原版 808 的 4-bit 微控制器早已停產且缺乏 MIDI，Tubbutec 以現代微控制器接管觸發脈衝（Trigger Pulse）與重音控制，不僅解決老機維修痛點，更在不介入類比音訊路徑的情況下，實現高精度時鐘同步、複雜節奏細分與即時演出控制。",
-      "broadcast_script": "隔壁織音人音樂科技速報！傳奇鼓機 Roland TR-808 也能現代化升級啦！德國廠牌 Tubbutec 推出全新 CPU 改裝套件，在完整保留經典純類比發聲電路的前提下，直接加入 MIDI 同步、十一種全新打擊樂器音色與進階音序器工具，讓老鼓機無縫接軌現代編曲工作流。想看完整技術分析，記得往下滑看看喔！",
+      "tech_analysis": "將主動式運算放大器破音電路直接內建於電吉他琴腔內，能讓高阻抗拾音器訊號在經過導線衰減前就先進入削波放大級，保留更銳利的高頻攻擊感與極高訊噪比。搭配 Telecaster 原本明亮緊實的琴橋拾音器特性，能產生極具穿透力與現代金屬感的獨特顆粒破音。",
+      "broadcast_script": "隔壁織音人音樂科技速報！Fender 的哥吉拉聯名企劃又出大招啦！全新 Godzilla Telecaster 不只有帥氣怪獸塗裝，居然直接在琴身裡內建高增益 Op-Amp 破音電路，不用踩效果器，開關一撥就能釋放超狂的怪獸級轟鳴音色！想看完整技術分析，記得往下滑看看喔！",
       "keywords": [
-        "Roland TR-808",
-        "Tubbutec",
-        "鼓機改裝",
-        "MIDI",
-        "類比合成器"
-      ],
-      "illustrations": [
-        "C:/Users/timmychi/.gemini/antigravity/brain/2d7c3439-1ee3-4ddf-81ee-d65ab7753817/tr808_sketchbook_illustration_v3_1795592140713.jpg",
-        "C:/Users/timmychi/.gemini/antigravity/brain/2d7c3439-1ee3-4ddf-81ee-d65ab7753817/drum_machine_cpu_upgrade_1795592109497.jpg",
-        "C:/Users/timmychi/.gemini/antigravity/brain/2d7c3439-1ee3-4ddf-81ee-d65ab7753817/midi_drum_machine_laptop_sketch_final_1795592148133.jpg",
-        "C:/Users/timmychi/.gemini/antigravity/brain/2d7c3439-1ee3-4ddf-81ee-d65ab7753817/percussion_sequencer_constellation_v2_1795592152494.jpg"
+        "Fender",
+        "Telecaster",
+        "哥吉拉",
+        "電吉他",
+        "內建破音"
       ],
       "analyzed_by": "Antigravity",
-      "fetched_at": "2026-11-25T07:36:50.860047+00:00",
-      "video_url": "./media/20261125_cc4f72e46da5.mp4",
-      "audio_url": "./media/20261125_cc4f72e46da5.wav",
-      "video_duration": 29.8,
-      "tts_engine": "GPT-SoVITS-v5turbo"
+      "fetched_at": "2026-11-25T11:47:57.447895+00:00",
+      "video_url": "./media/20261202_daee606fe87e.mp4",
+      "audio_url": null,
+      "video_duration": 23.9,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "14f15d40b341",
+      "title": "Way Huge Smalls Green Rhino Overdrive: ’95 Style!",
+      "url": "https://www.gearnews.com/way-huge-smalls-green-rhino-overdrive-95-style/",
+      "source": "Gearnews",
+      "published_at": "2026-11-25T07:00:00+00:00",
+      "publish_at": "2026-12-02T08:30:00+08:00",
+      "title_zh": "Way Huge Smalls Green Rhino：1995 經典過載效果器迷你化回歸",
+      "category": "硬體合成器",
+      "summary": "Way Huge 宣布將 1995 年傳奇過載單顆 Green Rhino 以更精巧的 Smalls 迷你外殼重新復刻，完整保留當年廣受好評的暖厚中頻推進感與動態手感，大幅節省現代吉他手效果器盤的寶貴空間。",
+      "highlights": [
+        "忠實還原 1995 年初代 Way Huge Green Rhino 經典類比過載電路",
+        "改採更精巧的 Smalls 迷你外殼設計，輕鬆塞進緊湊型現代效果器盤",
+        "兼顧傳統軟削波暖度與強勁低頻支撐，適合單獨推箱或疊加其他破音"
+      ],
+      "tech_analysis": "初代 Green Rhino 是在經典 Tube Screamer 拓撲結構上改良的標誌性電路，透過調整輸入耦合電容與中低頻濾波曲線，解決傳統過載容易流失低頻厚度的問題。新版 Smalls 藉由現代高密度表面黏著（SMD）元件布局縮小體積，同時維持原本的類比動態響應與低底噪表現。",
+      "broadcast_script": "隔壁織音人音樂科技速報！吉他手愛用的經典過載單顆回歸啦！Way Huge 把 1995 年的傳奇 Green Rhino 縮小成 Smalls 迷你版本，完整保留當年暖厚又有衝擊力的經典過載音色，還能幫效果器盤省下超多空間！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Way Huge",
+        "Green Rhino",
+        "過載效果器",
+        "吉他單顆",
+        "類比電路"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T11:48:44.400640+00:00",
+      "video_url": "./media/20261202_14f15d40b341.mp4",
+      "audio_url": null,
+      "video_duration": 22.4,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "cad3b4792dcb",
+      "title": "Sonic Logic Apps Releases Stutter Lab And Pulse Lab Audio Effects",
+      "url": "https://www.synthtopia.com/content/2026/11/24/sonic-logic-apps-releases-stutter-lab-and-pulse-lab-audio-effects/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-24T13:00:00+00:00",
+      "publish_at": "2026-12-01T08:30:00+08:00",
+      "title_zh": "Sonic Logic Apps 推出 Stutter Lab 與 Pulse Lab 兩款 AUv3 節奏效果器",
+      "category": "插件工具",
+      "summary": "Sonic Logic Apps 針對 iPhone、iPad 與 Mac 同步推出兩款創意 AUv3 效果器：Stutter Lab 主打速度同步的碎拍重複與 Glitch 過門，Pulse Lab 則專注於律動閘門與節奏切割塑形。",
+      "highlights": [
+        "跨平台支援 iPhone、iPad 與 Mac，完整相容 AUv3 行動與桌面宿主環境",
+        "Stutter Lab 專為即時碎拍重複（Stutter）與 Glitch 過門填充設計",
+        "Pulse Lab 提供精準對拍的律動切片與動態脈衝，瞬間賦予靜態音色節奏感"
+      ],
+      "tech_analysis": "行動音樂製作近年因 Apple Silicon 跨平台架構統一而大幅進化，一套 AUv3 外掛即可在 iPad 現場與 Mac 錄音室無縫共用。Stutter Lab 與 Pulse Lab 皆以宿主 Tempo 時鐘為核心，透過零交叉緩衝區切片（Zero-Crossing Slicing）避免高速重複時產生爆裂雜訊，非常適合電子音樂即時過門演出。",
+      "broadcast_script": "隔壁織音人音樂科技速報！用 iPad 或 Mac 做電音的朋友看過來！Sonic Logic Apps 推出 Stutter Lab 跟 Pulse Lab 兩款全新 AUv3 效果器，一款專攻對拍碎拍跟 Glitch 過門，一款主打律動脈衝切割，輕鬆讓平淡的音色瞬間充滿節奏張力！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "AUv3",
+        "Stutter Lab",
+        "Pulse Lab",
+        "iPad 音樂製作",
+        "Glitch 效果器"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T11:46:07.091856+00:00",
+      "video_url": "./media/20261201_cad3b4792dcb.mp4",
+      "audio_url": null,
+      "video_duration": 26.3,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "d77bda15692a",
+      "title": "New iPad Drum Synth Features Dual Oscillators, FM And A Modulation Sequencer",
+      "url": "https://www.synthtopia.com/content/2026/11/23/new-ipad-drum-synth-features-dual-oscillators-fm-and-a-modulation-sequencer/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-23T20:00:00+00:00",
+      "publish_at": "2026-12-01T08:30:00+08:00",
+      "title_zh": "Trumsynt-16 登陸 iPad：雙振盪器、FM 與調變音序器鼓機合成器",
+      "category": "產品發表",
+      "summary": "瑞典開發商 Liljeholmen DSP 推出專為 iPad 打造的類比建模打擊合成器 Trumsynt-16，每組鼓聲皆搭載雙振盪器、FM 調變、硬同步（Hard Sync）與獨立參數調變音序器，可捏出極具個性的電子鼓組。",
+      "highlights": [
+        "專為 iPad 觸控介面設計的純合成式類比建模鼓機，不依賴靜態取樣",
+        "搭載雙振盪器、FM 頻率調變與 Hard Sync，可打造厚重底鼓到金屬打擊音色",
+        "內建參數調變音序器（Modulation Sequencer），每一步都能動態改變音色質地"
+      ],
+      "tech_analysis": "相較於傳統取樣鼓機，純合成式鼓機（Drum Synth）的魅力在於每個音符都能即時響應音高包絡與 FM 深度變化。Trumsynt-16 將雙振盪器硬同步與步進參數鎖定（類似 Elektron P-Lock 概念）搬上 iPad 觸控螢幕，讓製作人能透過滑動手勢快速雕琢動態演進的 Techno 與實驗電子節奏。",
+      "broadcast_script": "隔壁織音人音樂科技速報！iPad 又有超硬核的新鼓機啦！Liljeholmen DSP 推出類比建模打擊合成器 Trumsynt-16，不靠取樣，而是用雙振盪器、FM 調變跟硬同步即時合成鼓聲，還內建參數調變音序器，每一步都能滑出超有個性的電子節奏！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Trumsynt-16",
+        "iPad 鼓機",
+        "合成鼓機",
+        "FM 調變",
+        "電子音樂"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T11:47:06.900813+00:00",
+      "video_url": "./media/20261201_d77bda15692a.mp4",
+      "audio_url": null,
+      "video_duration": 27.8,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "f56ff4cef1ae",
+      "title": "Instruments.digital releases Felted Piano, a FREE upright felt piano VST for Windows and Linux",
+      "url": "https://bedroomproducersblog.com/2026/11/24/instruments-digital-felted-piano/",
+      "source": "Bedroom Producers Blog",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "publish_at": "2026-11-30T08:30:00+08:00",
+      "title_zh": "免費好物！Instruments.digital 推出 Felted Piano 羊毛氈立式鋼琴外掛",
+      "category": "插件工具",
+      "summary": "開發商 Instruments.digital 釋出完全免費的 Felted Piano 虛擬樂器，忠實錄製在琴槌與琴弦間夾入羊毛氈的立式鋼琴，呈現極具親密感、溫暖柔霧的電影配樂與 Lo-Fi 鋼琴音色，支援 Windows 與 Linux。",
+      "highlights": [
+        "完全免費下載的羊毛氈立式鋼琴 VST 外掛，支援 Windows 與 Linux",
+        "保留細膩的琴槌機械聲與柔和低頻共鳴，特別適合電影配樂與 Lo-Fi 風格",
+        "輕量化取樣架構，不佔大量記憶體也能在一般筆電流暢演奏"
+      ],
+      "tech_analysis": "Felt Piano（羊毛氈鋼琴）之所以成為現代新古典與影視配樂的熱門音色，是因為羊毛氈會大幅吸收琴弦起音瞬間的高頻泛音，同時突顯木質共鳴與近場麥克風收錄的琴鍵機械細節。這款免費外掛在多力度分層與釋放取樣（Release Samples）上表現自然，是低預算編曲環境極具價值的免費音源。",
+      "broadcast_script": "隔壁織音人音樂科技速報！免費好音源又來啦！Instruments.digital 推出完全免費的 Felted Piano 羊毛氈立式鋼琴外掛，支援 Windows 跟 Linux，溫暖柔和又帶點琴鍵機械細節，做 Lo-Fi 或電影感配樂超對味！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Felted Piano",
+        "免費 VST",
+        "羊毛氈鋼琴",
+        "配樂音源",
+        "Lo-Fi"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T11:44:16.498333+00:00",
+      "video_url": "./media/20261130_f56ff4cef1ae.mp4",
+      "audio_url": null,
+      "video_duration": 25.6,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "4aa9071d3097",
+      "title": "Frap Tools Magnolia 1.2 Firmware Adds Patch Librarian And More Program Storage",
+      "url": "https://www.synthtopia.com/content/2026/11/24/frap-tools-magnolia-1-2-firmware-adds-patch-librarian-and-more-program-storage/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-24T14:00:00+00:00",
+      "publish_at": "2026-11-30T08:30:00+08:00",
+      "title_zh": "Frap Tools Magnolia 1.2 韌體更新：音色庫擴充至 499 組與免費管理軟體",
+      "category": "硬體合成器",
+      "summary": "義大利頂級合成器品牌 Frap Tools 為類比合成器 Magnolia 釋出 1.2 韌體，將內建音色儲存容量大幅擴充至 499 組與 9 組現場演出歌單，並同步推出免費的 macOS／Windows 音色管理軟體。",
+      "highlights": [
+        "內建音色儲存空間大幅擴充至 499 組 Program，並支援 9 組現場 Set List",
+        "新增多種旋鈕數值拾取模式（Knob Modes），避免現場切音色時參數暴衝",
+        "同步推出免費桌面端 Patch Librarian 管理軟體，支援 macOS 與 Windows"
+      ],
+      "tech_analysis": "高階純類比合成器在數位控制層最常面臨的挑戰，是龐大音色管理與實體旋鈕位置不同步的問題。Magnolia 1.2 透過韌體重構非揮發性記憶體分區，擴增近五百組音色並加入多種旋鈕接管模式（如 Pass-Through 與 Relative），讓類比音色在巡迴現場演出也能具備高度可靠與可重現性。",
+      "broadcast_script": "隔壁織音人音樂科技速報！義大利高階類比合成器 Frap Tools Magnolia 釋出 1.2 韌體大升級！內建音色直接擴充到四百九十九組，還加入九組演出歌單、全新旋鈕模式跟免費電腦管理軟體，讓現場演出切換音色更安心順手！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Frap Tools",
+        "Magnolia",
+        "類比合成器",
+        "韌體更新",
+        "演出歌單"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T11:45:12.190680+00:00",
+      "video_url": "./media/20261130_4aa9071d3097.mp4",
+      "audio_url": null,
+      "video_duration": 25.8,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "340889a0c4ef",
+      "title": "Cherry Audio DW-8K Recreates The Korg DW-8000, But With Expanded Polyphony And Modulation",
+      "url": "https://www.synthtopia.com/content/2026/11/24/cherry-audio-dw-8k-recreates-the-korg-dw-8000-but-with-expanded-polyphony-and-modulation/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-24T19:00:00+00:00",
+      "publish_at": "2026-11-29T08:30:00+08:00",
+      "title_zh": "Cherry Audio DW-8K 復刻經典 Korg DW-8000，升級 16 複音與 MPE",
+      "category": "插件工具",
+      "summary": "Cherry Audio 推出經典八零年代混血合成器復刻版 DW-8K，忠實重現 Korg DW-8000 獨特的數位波形加類比濾波器音色，並大幅擴充至雙層 16 複音、獨立音序器與現代 MPE 表現力支援。",
+      "highlights": [
+        "忠實還原 1985 年經典 Korg DW-8000 的 DWGS 數位波形與溫潤類比濾波器",
+        "升級雙層音色架構與 16 複音，突破當年原機 8 複音的硬體限制",
+        "完整支援 MPE 多維表情控制、擴充調變矩陣與每層獨立步進音序器"
+      ],
+      "tech_analysis": "Korg DW-8000 當年以數位波形表（DWGS）搭配真實類比低通濾波器與數位延遲線聞名，造就獨特的冷暖交織音色。Cherry Audio DW-8K 不只精準建模其濾波器自激與階梯狀數位頻譜特徵，更透過雙層分層與 MPE 支援，讓 80 年代經典 Synthwave 與 Ambient 音色獲得現代化演出張力。",
+      "broadcast_script": "隔壁織音人音樂科技速報！Cherry Audio 推出全新復刻合成器 DW-8K，完美重現八零年代經典混血名機 Korg DW-8000！不只保留數位波形加類比濾波的迷人音色，還升級雙層十六複音、獨立音序器跟 MPE 表情支援，復古又現代！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Cherry Audio",
+        "DW-8K",
+        "Korg DW-8000",
+        "復古合成器",
+        "MPE"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T11:42:26.342154+00:00",
+      "video_url": "./media/20261129_340889a0c4ef.mp4",
+      "audio_url": null,
+      "video_duration": 27.5,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "8cf452cc37c7",
+      "title": "Mutable Dreams Turns Trimui Brick Into A Portable Generative Synthesizer",
+      "url": "https://www.synthtopia.com/content/2026/11/24/mutable-dreams-turns-trimui-brick-into-a-portable-generative-synthesizer/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-24T17:00:00+00:00",
+      "publish_at": "2026-11-29T08:30:00+08:00",
+      "title_zh": "Mutable Dreams 1.5.9：把掌上遊戲機變成隨身生成式合成器",
+      "category": "硬體合成器",
+      "summary": "開源專案 Mutable Dreams 推出 1.5.9 更新，能將 Trimui Brick 等平價復古掌上遊戲機、Android 手機與 Linux 電腦，直接變身成結合 Mutable Instruments 演算法的隨身生成式合成器。",
+      "highlights": [
+        "將平價掌機 Trimui Brick 改造成口袋大小的生成式電子樂器",
+        "整合經典 Mutable Instruments 開源歐規模組（Eurorack）DSP 演算法",
+        "支援實體十字鍵與按鍵操作，通勤或旅行途中都能隨時即興創作環境音樂"
+      ],
+      "tech_analysis": "由於 Mutable Instruments 創辦人將 Plaits、Clouds 等經典模組的 C++ DSP 原始碼全面開源，開發者得以將這些高效能定點／浮點運算引擎移植至掌上遊戲機的低功耗 ARM 處理器。透過精簡 Linux 音訊層（ALSA）達成低延遲輸出，讓不到百美元的遊戲機也能擁有數萬元模組合成器的音色靈魂。",
+      "broadcast_script": "隔壁織音人音樂科技速報！平價掌上遊戲機居然也能變成高階合成器！開源軟體 Mutable Dreams 推出新版本，能把 Trimui Brick 掌機直接變成隨身生成式合成器，內建經典歐規模組演算法，用遊戲按鍵就能隨時隨地玩出超迷幻的環境音樂！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Mutable Dreams",
+        "掌機合成器",
+        "開源 DSP",
+        "Eurorack",
+        "生成式音樂"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T11:43:22.513548+00:00",
+      "video_url": "./media/20261129_8cf452cc37c7.mp4",
+      "audio_url": null,
+      "video_duration": 27.2,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "b2d0c915c371",
+      "title": "XMP OS Offers an Open-Source Alternative Workflow for MPC Live Mk1",
+      "url": "https://www.synthtopia.com/content/2026/11/24/xmp-os-offers-an-open-source-alternative-workflow-for-mpc-live-mk1/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-24T21:31:11+00:00",
+      "publish_at": "2026-11-28T08:30:00+08:00",
+      "title_zh": "XMP OS 登場：讓初代 MPC Live 變身開源 Clip-Based 編曲工作站",
+      "category": "技術教學",
+      "summary": "XMP OS 是一款專為初代 Akai MPC Live Mk1 打造的免費開源替代作業系統，導入類似 Ableton 的片段與場景（Clip-Based）工作流，內建音軌、樂器、效果器，還提供瀏覽器試用版與開發工具。",
+      "highlights": [
+        "免費開源替代系統，讓 2017 年推出的初代 MPC Live Mk1 重獲新生",
+        "導入以 Track 與 Scene 為核心的 Clip-Based 工作流，更適合現場即興演出",
+        "同步提供瀏覽器版本與自訂開發工具，方便製作人在電腦上預覽或客製功能"
+      ],
+      "tech_analysis": "初代 MPC Live 內部搭載 ARM 嵌入式 Linux 硬體，這讓開源社群能繞過原廠封閉介面，直接在其上打造全新的即時音訊引擎與 UI 框架。XMP OS 透過輕量化 Clip 觸發架構與跨平台 Web 預覽能力，展現了開源韌體延長音樂硬體生命週期的巨大潛力。",
+      "broadcast_script": "隔壁織音人音樂科技速報！手邊有初代 MPC Live 的朋友先別急著換機！全新免費開源系統 XMP OS 能讓它直接變身 Clip-Based 編曲工作站，支援場景觸發、內建樂器效果器，甚至還能在瀏覽器裡搶先體驗跟自訂開發！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "XMP OS",
+        "MPC Live",
+        "開源系統",
+        "Clip-Based",
+        "嵌入式音訊"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T11:40:35.428805+00:00",
+      "video_url": "./media/20261128_b2d0c915c371.mp4",
+      "audio_url": null,
+      "video_duration": 26.7,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "dccf1ddd6c13",
+      "title": "Forever 89 miniFM Pairs Three-Operator FM Synthesis With A Simple Interface",
+      "url": "https://www.synthtopia.com/content/2026/11/24/forever-89-minifm-pairs-three-operator-fm-synthesis-with-a-simple-interface/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-24T20:00:00+00:00",
+      "publish_at": "2026-11-28T08:30:00+08:00",
+      "title_zh": "Forever 89 miniFM：極簡介面結合三振盪器 FM 與諧波內插合成",
+      "category": "插件工具",
+      "summary": "Forever 89 推出全新合成器外掛 miniFM，將傳統複雜難懂的 FM 頻率調變濃縮成直覺好上手的極簡介面，內建三振盪器引擎、諧波內插合成（Harmonic Interpolation）與單聲部 Flux 動態調變。",
+      "highlights": [
+        "採用三振盪器 FM 架構搭配極簡視覺介面，大幅降低 FM 音色設計門檻",
+        "獨創 Harmonic Interpolation Synthesis 諧波內插技術，平滑過渡豐富泛音",
+        "內建每聲部獨立 Flux 調變與類比風格濾波器，兼具數位清脆感與暖度"
+      ],
+      "tech_analysis": "傳統六振盪器 FM 合成器常因演算法矩陣過於抽象而讓新手卻步。miniFM 將核心精簡為三個 Operator，並透過諧波內插演算法把離散的調變指數轉化為連續可聽的音色變化，再結合類比建模濾波器修飾高頻刺耳感，是兼顧即時演奏手感與深度音色塑形的現代設計典範。",
+      "broadcast_script": "隔壁織音人音樂科技速報！覺得 FM 合成器太難調嗎？Forever 89 推出全新外掛 miniFM，把三振盪器 FM 合成做成超直覺的極簡介面，還加入諧波內插技術跟類比濾波器，隨手一轉就能調出清脆又溫暖的現代電子音色！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Forever 89",
+        "miniFM",
+        "FM 合成器",
+        "諧波內插",
+        "音色設計"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T11:41:29.757036+00:00",
+      "video_url": "./media/20261128_dccf1ddd6c13.mp4",
+      "audio_url": null,
+      "video_duration": 27.4,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "bf80f7f606af",
+      "title": "iZotope Nectar 5: New Compression and Vocal Modules, and a Unique ARA Plugin",
+      "url": "https://www.gearnews.com/izotope-nectar-5-new-compression-and-vocal-modules-and-a-unique-ara-plugin/",
+      "source": "Gearnews",
+      "published_at": "2026-11-24T18:00:00+00:00",
+      "publish_at": "2026-11-27T08:30:00+08:00",
+      "title_zh": "iZotope Nectar 5 登場：全新人聲壓縮模組與逐字 ARA 效果器",
+      "category": "插件工具",
+      "summary": "iZotope 發表旗艦人聲混音套組 Nectar 5，新增多款現代感人聲壓縮與音色塑形模組，最吸睛的是全新 ARA 整合外掛，讓製作人能直接在時間軸上針對「單一字詞」套用專屬殘響、延遲或破音效果。",
+      "highlights": [
+        "導入獨特的 ARA 人聲外掛，可逐字精準套用不同效果而免切多條音軌",
+        "新增針對現代流行與饒舌人聲調校的壓縮器與動態修飾模組",
+        "升級 Vocal Assistant 智慧分析引擎，快速解決齒音、混濁頻段與動態起伏"
+      ],
+      "tech_analysis": "傳統人聲混音若要為特定字詞加上 Throw Delay 或電話濾波效果，往往得複製音軌並手動繪製大量 Automation。Nectar 5 透過 ARA2 協定直接讀取 DAW 音訊緩衝區並進行語音切分，把效果參數直接綁定到字詞片段（Word-Level Processing），大幅簡化精細人聲後製的運算與操作成本。",
+      "broadcast_script": "隔壁織音人音樂科技速報！人聲混音神器 iZotope Nectar 5 正式登場啦！這次除了加入全新人聲壓縮與修飾模組，最酷的是推出支援 ARA 協定的逐字處理外掛，不用再辛苦切軌拉自動化，點一下單字就能套用專屬殘響或特效！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "iZotope",
+        "Nectar 5",
+        "人聲混音",
+        "ARA",
+        "效果器外掛"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T11:38:49.984937+00:00",
+      "video_url": "./media/20261127_bf80f7f606af.mp4",
+      "audio_url": null,
+      "video_duration": 27.0,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "d96caeb6da3b",
+      "title": "Kemper Profiler Native: Play all your Kemper profiles in your DAW",
+      "url": "https://www.gearnews.com/kemper-profiler-native-play-all-your-kemper-profiles-in-your-daw/",
+      "source": "Gearnews",
+      "published_at": "2026-11-24T16:00:00+00:00",
+      "publish_at": "2026-11-27T08:30:00+08:00",
+      "title_zh": "Kemper Profiler Native 正式推出：經典音箱模擬全面進駐 DAW",
+      "category": "插件工具",
+      "summary": "吉他手敲碗多年的 Kemper 軟體版終於成真！Kemper 正式發布 Profiler Native 外掛，讓製作人免接硬體主機，就能直接在 DAW 裡載入並演奏龐大的 Kemper 音箱 Profile 音色庫。",
+      "highlights": [
+        "Kemper 首度推出純軟體 Native 外掛版本，支援主流 DAW 直接載入",
+        "完整相容既有龐大的 Kemper Rig 與音箱 Profile 生態系",
+        "大幅簡化錄音室 Re-Amp 流程，乾訊號錄製後可隨時無損更換音箱頭與箱體"
+      ],
+      "tech_analysis": "過去 Kemper 仰賴專屬硬體 DSP 進行非線性真空管音箱響應建模（Profiling），在錄音室混音階段若想微調音色常須透過 S/PDIF 或類比迴路重新 Re-Amp。Profiler Native 將核心演算法移植至現代 x86 與 Apple Silicon 原生架構，讓現場硬體演出與錄音室純軟體後製實現 100% 音色無縫同步。",
+      "broadcast_script": "隔壁織音人音樂科技速報！吉他手等了好久的 Kemper 軟體版終於來了！官方正式推出 Kemper Profiler Native 外掛，現在不用接硬體主機，直接在 DAW 裡就能載入滿滿的經典音箱 Profile，錄完乾訊號想怎麼換音箱頭都超方便！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Kemper",
+        "吉他音箱模擬",
+        "DAW",
+        "Re-Amp",
+        "效果器外掛"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T11:39:38.622607+00:00",
+      "video_url": "./media/20261127_d96caeb6da3b.mp4",
+      "audio_url": null,
+      "video_duration": 23.8,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "2f0f021b7568",
+      "title": "Tidal is banning all 'entirely' AI-generated tracks - that's 27 million, and counting",
+      "url": "https://www.musicradar.com/music-industry/streaming-sharing/tidal-is-banning-all-entirely-ai-generated-tracks-thats-27-million-and-counting",
+      "source": "MusicRadar Tech",
+      "published_at": "2026-11-25T10:00:00+00:00",
+      "publish_at": "2026-11-26T08:30:00+08:00",
+      "title_zh": "TIDAL 全面封殺純 AI 生成音樂！已下架 2,700 萬首曲目",
+      "category": "AI 音樂",
+      "summary": "高音質串流平台 TIDAL 正式宣布全面禁止「完全由 AI 生成」的音樂上架，目前已下架超過 2,700 萬首純 AI 曲目，並強化音訊指紋與生成模型偵測機制，以保護真實音樂創作者的分潤與曝光權益。",
+      "highlights": [
+        "TIDAL 宣布全面封殺完全由 AI 生成的曲目，累計已下架高達 2,700 萬首",
+        "區分「AI 輔助混音／母帶」與「純 AI 一鍵生成」，避免誤傷正常製作流程",
+        "防止大量自動化曲目稀釋串流版稅池，成為音樂串流平台反 AI 垃圾曲風潮的新指標"
+      ],
+      "tech_analysis": "串流平台要精準攔截純 AI 生成音軌，核心在於頻譜偽影偵測（Spectral Artifact Detection）與神經聲碼器特徵分類。透過分析高頻相位連續性、時間結構重複度與發行商批次上傳模式，平台能在上架前自動標記異常曲目；同時保留對 DAW 內 AI 降噪、人聲分離與智慧 EQ 等輔助工具的友善空間。",
+      "broadcast_script": "隔壁織音人音樂科技速報！高音質串流平台 TIDAL 正式向純 AI 垃圾曲宣戰，宣布全面封殺完全由 AI 生成的音樂，目前已下架超過兩千七百萬首曲目！官方強調只針對一鍵生成的純 AI 歌曲，一般用 AI 輔助混音的創作者不受影響，幫真實音樂人守住版稅池。想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "TIDAL",
+        "AI 音樂",
+        "串流平台",
+        "音樂版權",
+        "音訊偵測"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T11:37:00.456527+00:00",
+      "video_url": "./media/20261126_2f0f021b7568.mp4",
+      "audio_url": null,
+      "video_duration": 33.1,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "99fb877d3dc3",
+      "title": "FL Studio 2026.2 Update: New Plugins and Workflow Features",
+      "url": "https://www.gearnews.com/fl-studio-2026-2-update-new-plugins-and-workflow-features/",
+      "source": "Gearnews",
+      "published_at": "2026-11-25T09:00:00+00:00",
+      "publish_at": "2026-11-26T08:30:00+08:00",
+      "title_zh": "FL Studio 2026.2 重大更新：兩款全新外掛與混音器全面進化",
+      "category": "產品發表",
+      "summary": "Image-Line 釋出 FL Studio 2026.2 免費更新，一次帶來兩款全新內建效果器與合成器外掛，同時針對 Mixer 混音器路由、自動化曲線與多軌編曲工作流進行大幅優化，維持終身免費升級傳統。",
+      "highlights": [
+        "延續 FL Studio 終身免費更新政策，2026.2 直接附贈兩款全新內建外掛",
+        "針對 Mixer 混音器介面、母線路由與多軌整理流程進行深度改進",
+        "提升大型專案的 CPU 多核心排程效率與自動化曲線編輯順暢度"
+      ],
+      "tech_analysis": "FL Studio 近年持續彌補傳統 Pattern-Based 編曲在大型線性混音專案上的痛點。2026.2 在混音器路由可視化與音軌綁定邏輯上更趨成熟，並透過更細緻的 DSP 執行緒分配降低高軌數專案的緩衝區爆音（Underrun）風險，讓電子音樂與流行編曲製作人能在一套 DAW 內無痛完成從靈感草稿到母帶後製。",
+      "broadcast_script": "隔壁織音人音樂科技速報！FL Studio 推出 2026.2 免費大更新啦！這次不只維持佛心的終身免費升級，還一次送出兩款全新內建外掛，並大幅強化混音器路由與多軌工作流，讓大型編曲專案更順手、更省 CPU 資源。想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "FL Studio",
+        "DAW",
+        "混音器",
+        "編曲軟體",
+        "免費更新"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T11:37:55.993255+00:00",
+      "video_url": "./media/20261126_99fb877d3dc3.mp4",
+      "audio_url": null,
+      "video_duration": 26.8,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
     },
     {
       "id": "e849c59c5aff",
@@ -76,6 +474,42 @@
       "video_url": "./media/20261125_e849c59c5aff.mp4",
       "audio_url": "./media/20261125_e849c59c5aff.wav",
       "video_duration": 27.8,
+      "tts_engine": "GPT-SoVITS-v5turbo"
+    },
+    {
+      "id": "cc4f72e46da5",
+      "title": "Tubbutec TR-8oh8 Upgrade Adds MIDI, 11 Instruments And New Sequencer Tools To The Roland TR-808",
+      "url": "https://www.synthtopia.com/content/2026/11/24/tubbutec-tr-8oh8-roland-tr-808-upgrade/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-24T21:51:52+00:00",
+      "title_zh": "經典 TR-808 換腦升級！Tubbutec TR-8oh8 加入 MIDI 與 11 種新音色",
+      "category": "硬體合成器",
+      "summary": "德國改裝廠 Tubbutec 推出 TR-8oh8 升級套件，透過替換 Roland TR-808 原始 CPU，在完整保留經典類比發聲電路的前提下，為這台傳奇鼓機加入完整 MIDI 控制、11 種額外樂器音色與現代化音序器功能。",
+      "highlights": [
+        "100% 保留 Roland TR-808 原始類比發聲電路，不破壞經典暖厚音色",
+        "直接替換老舊 CPU，新增完整 MIDI 輸入輸出與現代 DAW 同步能力",
+        "額外解鎖 11 種新音色並大幅擴充 Pattern 與 Track 音序編排工具"
+      ],
+      "tech_analysis": "TR-8oh8 採用「控制層數位化、發聲層純類比」的經典混血改裝架構。由於原版 808 的 4-bit 微控制器早已停產且缺乏 MIDI，Tubbutec 以現代微控制器接管觸發脈衝（Trigger Pulse）與重音控制，不僅解決老機維修痛點，更在不介入類比音訊路徑的情況下，實現高精度時鐘同步、複雜節奏細分與即時演出控制。",
+      "broadcast_script": "隔壁織音人音樂科技速報！傳奇鼓機 Roland TR-808 也能現代化升級啦！德國廠牌 Tubbutec 推出全新 CPU 改裝套件，在完整保留經典純類比發聲電路的前提下，直接加入 MIDI 同步、十一種全新打擊樂器音色與進階音序器工具，讓老鼓機無縫接軌現代編曲工作流。想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Roland TR-808",
+        "Tubbutec",
+        "鼓機改裝",
+        "MIDI",
+        "類比合成器"
+      ],
+      "illustrations": [
+        "C:/Users/timmychi/.gemini/antigravity/brain/2d7c3439-1ee3-4ddf-81ee-d65ab7753817/tr808_sketchbook_illustration_v3_1795592140713.jpg",
+        "C:/Users/timmychi/.gemini/antigravity/brain/2d7c3439-1ee3-4ddf-81ee-d65ab7753817/drum_machine_cpu_upgrade_1795592109497.jpg",
+        "C:/Users/timmychi/.gemini/antigravity/brain/2d7c3439-1ee3-4ddf-81ee-d65ab7753817/midi_drum_machine_laptop_sketch_final_1795592148133.jpg",
+        "C:/Users/timmychi/.gemini/antigravity/brain/2d7c3439-1ee3-4ddf-81ee-d65ab7753817/percussion_sequencer_constellation_v2_1795592152494.jpg"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T07:36:50.860047+00:00",
+      "video_url": "./media/20261125_cc4f72e46da5.mp4",
+      "audio_url": "./media/20261125_cc4f72e46da5.wav",
+      "video_duration": 29.8,
       "tts_engine": "GPT-SoVITS-v5turbo"
     }
   ]

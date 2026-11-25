@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>音樂科技播報｜隔壁織音人 SoundWeavers</title>
+  <meta name="description" content="隔壁織音人每日音樂科技播報：自動整理最新音樂科技產品、AI 音訊技術與製作教學，搭配 30 秒手繪動畫短影片與技術分析。" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+        else document.documentElement.setAttribute("data-theme", "nextdoor");
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-group">
+        <a class="brand" href="https://soundweavers-music.github.io/" target="_blank" rel="noopener">隔壁織音人</a>
+        <span class="brand-sep">/</span>
+        <span class="brand-sub" id="site-title">音樂科技播報</span>
+      </div>
+      <div class="header-actions">
+        <span id="updated-at" class="updated-meta">載入中...</span>
+        <a class="nav-link" href="https://soundweavers-music.github.io/" target="_blank" rel="noopener">回主站 ↗</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" title="切換深淺色主題" aria-label="切換深淺色主題">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro">
+      <p class="eyebrow">DAILY MUSIC TECH BROADCAST</p>
+      <h1>音樂科技每日播報</h1>
+      <p id="site-subtitle" class="intro-desc">每日自動搜尋近期音樂科技新產品、AI 音訊技術與製作教學，提供繁體中文重點整理、技術分析與 30 秒手繪動畫短影片。</p>
+    </section>
+
+    <!-- Featured 30s Hand-Drawn Video Broadcast -->
+    <section id="featured-section" class="featured-card" aria-label="精選 30 秒手繪動畫播報">
+      <div class="featured-video-col">
+        <div class="phone-frame">
+          <video id="featured-video" controls playsinline preload="metadata"></video>
+          <div id="video-placeholder" class="video-placeholder hidden">
+            <span>尚無短影片，請執行每日排程產出</span>
+          </div>
+        </div>
+      </div>
+      <div class="featured-info-col">
+        <div class="featured-eyebrow">
+          <span class="tag-pill accent" id="featured-category">今日精選</span>
+          <span class="meta-text" id="featured-date"></span>
+          <span class="meta-text" id="featured-source"></span>
+        </div>
+        <h2 id="featured-title" class="featured-title">正在載入今日音樂科技播報...</h2>
+        <p id="featured-summary" class="featured-summary"></p>
+
+        <div class="featured-block">
+          <h3>重點整理</h3>
+          <ul id="featured-highlights" class="highlights-list"></ul>
+        </div>
+
+        <div class="featured-block tech-box">
+          <h3>技術分析</h3>
+          <p id="featured-tech"></p>
+        </div>
+
+        <details class="script-details">
+          <summary>展開 30 秒口播稿（隔壁女孩語音）</summary>
+          <p id="featured-script"></p>
+        </details>
+
+        <div class="featured-actions">
+          <a id="featured-link" class="btn-primary" href="#" target="_blank" rel="noopener">閱讀原文報導 ↗</a>
+          <audio id="featured-audio" controls class="audio-mini hidden"></audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Bar -->
+    <section class="controls-bar" aria-label="搜尋與篩選">
+      <div class="search-row">
+        <input id="search-input" type="search" placeholder="搜尋標題、關鍵字、產品名稱、來源或日期（如 2026-11）..." aria-label="搜尋新聞" />
+        <select id="month-filter" aria-label="依月份篩選">
+          <option value="all">所有月份</option>
+        </select>
+        <span id="result-count" class="result-count"></span>
+      </div>
+      <div id="category-filters" class="filter-chips"></div>
+    </section>
+
+    <!-- Date-Grouped News List -->
+    <section id="news-timeline" class="news-timeline" aria-label="依日期條列音樂科技新聞"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 隔壁織音人 SoundWeavers · 音樂科技每日播報 · 手繪動畫短影音 × GPT-SoVITS</p>
+      <p>
+        <a href="https://github.com/soundweavers-musicnews" target="_blank" rel="noopener">GitHub Repo</a>
+        ·
+        <a href="https://soundweavers-music.github.io/" target="_blank" rel="noopener">世界聲音主站</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

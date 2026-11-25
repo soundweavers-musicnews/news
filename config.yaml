@@ -1,0 +1,67 @@
+# SoundWeavers Music Tech News Pipeline Configuration
+
+site:
+  title: "SoundWeavers 音樂科技播報"
+  subtitle: "每日音樂科技、新產品與音訊技術深度速報"
+  output_dir: "site"
+  data_file: "site/data/news.json"
+  media_dir: "site/media"
+  max_archive_items: 60
+
+news:
+  days_lookback: 7
+  max_articles_per_run: 5
+  videos_per_run: 1
+  feeds:
+    - name: "CDM (Create Digital Music)"
+      url: "https://cdm.link/feed/"
+      default_category: "技術教學"
+    - name: "Synthtopia"
+      url: "https://www.synthtopia.com/feed/"
+      default_category: "硬體合成器"
+    - name: "Bedroom Producers Blog"
+      url: "https://bedroomproducersblog.com/feed/"
+      default_category: "插件工具"
+    - name: "Gearnews"
+      url: "https://www.gearnews.com/feed/"
+      default_category: "產品發表"
+    - name: "MusicRadar Tech"
+      url: "https://www.musicradar.com/feeds.xml"
+      default_category: "產品發表"
+
+gemini:
+  api_key_env: "GEMINI_API_KEY"
+  model: "gemini-2.5-flash"
+  timeout_seconds: 45
+
+tts:
+  provider: "gpt-sovits"
+  gptsovits_dir: "C:/Users/timmychi/gpt-sovits/GPT-SoVITS-v5-20261006"
+  runtime_python: "C:/Users/timmychi/gpt-sovits/GPT-SoVITS-v5-20261006/runtime/python.exe"
+  api_url: "http://127.0.0.1:9880"
+  ref_audio_path: "C:/Users/timmychi/gpt-sovits/隔壁女孩_模型音檔參考.m4a"
+  # Exact transcript of 隔壁女孩_模型音檔參考.m4a (required by SoVITS v5turbo)
+  prompt_text: "曼陀林琴身不大，指板有琴格，拿撥片彈奏，似乎就是一把比較小的吉他。"
+  prompt_lang: "zh"
+  text_lang: "zh"
+  # Will auto-detect custom weights inside GPT_weights_v5turbo / SoVITS_weights_v5turbo if present,
+  # otherwise falls back to pretrained v5turbo weights:
+  gpt_weights_dir: "GPT_weights_v5turbo"
+  sovits_weights_dir: "SoVITS_weights_v5turbo"
+  fallback_gpt_weights: "GPT_SoVITS/pretrained_models/s1v3.ckpt"
+  fallback_sovits_weights: "GPT_SoVITS/pretrained_models/gsv-v5-pretrained/s2Gv5turbo.pth"
+  speed_factor: 1.05
+
+video:
+  width: 1080
+  height: 1920
+  fps: 24
+  target_duration: 30.0
+  font_zh: "C:/Windows/Fonts/kaiu.ttf"
+  font_zh_bold: "C:/Windows/Fonts/msjhbd.ttc"
+  font_en: "C:/Windows/Fonts/segoeprb.ttf"
+
+deploy:
+  github_repo: "https://github.com/soundweavers-musicnews.git"
+  branch: "main"
+  target_url: "https://soundweavers-music.github.io/news/"

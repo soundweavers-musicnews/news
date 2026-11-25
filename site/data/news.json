@@ -1,0 +1,98 @@
+{
+  "updated_at": "2026-11-25T05:45:14.679101+00:00",
+  "site": {
+    "title": "SoundWeavers 音樂科技播報",
+    "subtitle": "每日音樂科技、新產品與音訊技術深度速報"
+  },
+  "items": [
+    {
+      "id": "e849c59c5aff",
+      "title": "AKAI MPC Sample Review: Make and Load Your Own Effects With Update 1.4!",
+      "url": "https://www.gearnews.com/akai-mpc-sample-review/",
+      "source": "Gearnews",
+      "published_at": "2026-11-24T23:57:00+00:00",
+      "title_zh": "AKAI MPC Sample 1.4 韌體開源！正式開放載入社群自製效果器",
+      "category": "產品發表",
+      "summary": "AKAI 正式釋出 MPC Sample 1.4 韌體更新，兌現開源承諾！現在製作人可透過 MPC Plugin Builder SDK 打造並載入自訂社群效果器（Knob FX），同時新增 Pad 內錄烘烤效果、16-Level 音階調音與遠端音訊畫面分享等開發者工具。",
+      "highlights": [
+        "支援載入透過 MPC Plugin Builder SDK 開發的社群 VST2 效果器，並相容其他獨立版 MPC 機型",
+        "新增 Resample Pad / Flatten Pad，一鍵將套用效果後的取樣直接烘烤成新音檔",
+        "內建 USB 遠端存取、截圖、即時螢幕與音訊串流等開發者除錯工具",
+        "加入 16-Level 音階調音模式與序列長度自動錄音播放，大幅提升現場與編曲流暢度"
+      ],
+      "tech_analysis": "AKAI 將 MPC Sample 推向開源並開放第三方 VST2 效果器架構，代表獨立硬體取樣機正從「封閉式固定 DSP」演進為「可程式化嵌入式音訊平台」。透過 MPC Plugin Builder SDK，DSP 開發者能以標準外掛介面編寫低延遲效果器，直接部署到獨立硬體運作；加上 Resample/Flatten Pad 釋放即時運算資源，讓中階硬體也能透過社群生態系無限擴充音色邊界。",
+      "broadcast_script": "哈囉大家好，歡迎來到隔壁織音人音樂科技速報！今天最讓人興奮的消息，是 AKAI 的 MPC Sample 推出 1.4 韌體更新，正式開放社群自製效果器啦！只要用官方 SDK，就能把自己寫的 VST2 效果器直接放進獨立硬體裡跑，還新增了 Pad 一鍵內錄跟 16 階音階模式。想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "AKAI",
+        "MPC Sample",
+        "開源音訊",
+        "VST2",
+        "取樣機"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T05:42:35.263516+00:00",
+      "video_url": "./media/20261125_e849c59c5aff.mp4",
+      "audio_url": "./media/20261125_e849c59c5aff.wav",
+      "video_duration": 33.1,
+      "tts_engine": "GPT-SoVITS-v5turbo"
+    },
+    {
+      "id": "cc4f72e46da5",
+      "title": "Tubbutec TR-8oh8 Upgrade Adds MIDI, 11 Instruments And New Sequencer Tools To The Roland TR-808",
+      "url": "https://www.synthtopia.com/content/2026/11/24/tubbutec-tr-8oh8-roland-tr-808-upgrade/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-24T21:51:52+00:00",
+      "title_zh": "經典 TR-808 換腦升級！Tubbutec TR-8oh8 加入 MIDI 與 11 種新音色",
+      "category": "硬體合成器",
+      "summary": "德國改裝廠 Tubbutec 推出 TR-8oh8 升級套件，透過替換 Roland TR-808 原始 CPU，在完整保留經典類比發聲電路的前提下，為這台傳奇鼓機加入完整 MIDI 控制、11 種額外樂器音色與現代化音序器功能。",
+      "highlights": [
+        "100% 保留 Roland TR-808 原始類比發聲電路，不破壞經典暖厚音色",
+        "直接替換老舊 CPU，新增完整 MIDI 輸入輸出與現代 DAW 同步能力",
+        "額外解鎖 11 種新音色並大幅擴充 Pattern 與 Track 音序編排工具"
+      ],
+      "tech_analysis": "TR-8oh8 採用「控制層數位化、發聲層純類比」的經典混血改裝架構。由於原版 808 的 4-bit 微控制器早已停產且缺乏 MIDI，Tubbutec 以現代微控制器接管觸發脈衝（Trigger Pulse）與重音控制，不僅解決老機維修痛點，更在不介入類比音訊路徑的情況下，實現高精度時鐘同步、複雜節奏細分與即時演出控制。",
+      "broadcast_script": "經典鼓機 Roland TR-808 居然也能現代化升級！Tubbutec 推出 TR-8oh8 套件，只要換掉原本的 CPU，就能在完全保留純類比音色的情況下，加入 MIDI 同步、11 種新音色和全新音序器工具，讓傳奇鼓機無縫接軌現代編曲工作流！",
+      "keywords": [
+        "Roland TR-808",
+        "Tubbutec",
+        "鼓機改裝",
+        "MIDI",
+        "類比合成器"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T05:42:35.263516+00:00",
+      "video_url": null,
+      "audio_url": null,
+      "video_duration": null
+    },
+    {
+      "id": "b2d0c915c371",
+      "title": "XMP OS Offers an Open-Source Alternative Workflow for MPC Live Mk1",
+      "url": "https://www.synthtopia.com/content/2026/11/24/xmp-os-offers-an-open-source-alternative-workflow-for-mpc-live-mk1/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-24T21:31:11+00:00",
+      "title_zh": "XMP OS 登場：讓初代 MPC Live 變身開源 Clip-Based 編曲工作站",
+      "category": "技術教學",
+      "summary": "XMP OS 是一款專為初代 Akai MPC Live Mk1 打造的免費開源替代作業系統，提供類似 Ableton 的 Clip-Based（片段與場景）工作流，內建音軌、樂器、效果器，甚至還提供瀏覽器版本與自訂開發工具。",
+      "highlights": [
+        "免費開源替代系統，讓 2017 年的初代 MPC Live Mk1 重獲新生",
+        "導入以 Track 與 Scene 為核心的 Clip-Based 工作流，更適合現場即興演出",
+        "同步提供瀏覽器版本與開發工具，方便製作人在電腦上預覽或客製功能"
+      ],
+      "tech_analysis": "初代 MPC Live 內部搭載 ARM 嵌入式 Linux 硬體，這讓社群得以繞過原廠封閉介面，直接在其上移植全新的即時音訊引擎與 UI 框架。XMP OS 透過輕量化 Clip 觸發架構與跨平台 Web 預覽能力，展示了開源韌體如何延長音樂硬體生命週期，並為嵌入式音訊介面開發提供極佳的學習範例。",
+      "broadcast_script": "手邊有初代 MPC Live 的朋友先別急著換機！全新開源系統 XMP OS 能讓它直接變身 Clip-Based 編曲工作站，支援場景觸發、內建樂器效果器，還能在瀏覽器裡直接體驗跟客製化開發，超酷的！",
+      "keywords": [
+        "XMP OS",
+        "MPC Live",
+        "開源系統",
+        "Clip-Based",
+        "音樂製作"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-25T05:42:35.263516+00:00",
+      "video_url": null,
+      "audio_url": null,
+      "video_duration": null
+    }
+  ]
+}

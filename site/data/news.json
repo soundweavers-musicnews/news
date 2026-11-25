@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T05:45:14.679101+00:00",
+  "updated_at": "2026-11-25T06:27:45.185959+00:00",
   "site": {
     "title": "SoundWeavers 音樂科技播報",
     "subtitle": "每日音樂科技、新產品與音訊技術深度速報"
@@ -21,7 +21,7 @@
         "加入 16-Level 音階調音模式與序列長度自動錄音播放，大幅提升現場與編曲流暢度"
       ],
       "tech_analysis": "AKAI 將 MPC Sample 推向開源並開放第三方 VST2 效果器架構，代表獨立硬體取樣機正從「封閉式固定 DSP」演進為「可程式化嵌入式音訊平台」。透過 MPC Plugin Builder SDK，DSP 開發者能以標準外掛介面編寫低延遲效果器，直接部署到獨立硬體運作；加上 Resample/Flatten Pad 釋放即時運算資源，讓中階硬體也能透過社群生態系無限擴充音色邊界。",
-      "broadcast_script": "哈囉大家好，歡迎來到隔壁織音人音樂科技速報！今天最讓人興奮的消息，是 AKAI 的 MPC Sample 推出 1.4 韌體更新，正式開放社群自製效果器啦！只要用官方 SDK，就能把自己寫的 VST2 效果器直接放進獨立硬體裡跑，還新增了 Pad 一鍵內錄跟 16 階音階模式。想看完整技術分析，記得往下滑看看喔！",
+      "broadcast_script": "隔壁織音人音樂科技速報！今天最讓人興奮的消息，是 AKAI 的 MPC Sample 推出 1.4 韌體更新，正式開放社群自製效果器啦！只要用官方 SDK，就能把自己寫的 VST2 效果器直接放進獨立硬體裡跑，還新增了 Pad 一鍵內錄跟 16 階音階模式。想看完整技術分析，記得往下滑看看喔！",
       "keywords": [
         "AKAI",
         "MPC Sample",
@@ -30,10 +30,10 @@
         "取樣機"
       ],
       "analyzed_by": "Antigravity",
-      "fetched_at": "2026-11-25T05:42:35.263516+00:00",
+      "fetched_at": "2026-11-25T06:24:47.945612+00:00",
       "video_url": "./media/20261125_e849c59c5aff.mp4",
       "audio_url": "./media/20261125_e849c59c5aff.wav",
-      "video_duration": 27.3,
+      "video_duration": 26.5,
       "tts_engine": "GPT-SoVITS-v5turbo"
     },
     {
@@ -60,7 +60,7 @@
         "類比合成器"
       ],
       "analyzed_by": "Antigravity",
-      "fetched_at": "2026-11-25T05:42:35.263516+00:00",
+      "fetched_at": "2026-11-25T06:24:47.945612+00:00",
       "video_url": null,
       "audio_url": null,
       "video_duration": null
@@ -89,7 +89,7 @@
         "音樂製作"
       ],
       "analyzed_by": "Antigravity",
-      "fetched_at": "2026-11-25T05:42:35.263516+00:00",
+      "fetched_at": "2026-11-25T06:24:47.945612+00:00",
       "video_url": null,
       "audio_url": null,
       "video_duration": null

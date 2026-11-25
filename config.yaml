@@ -50,16 +50,16 @@ tts:
   sovits_weights_dir: "SoVITS_weights_v5turbo"
   fallback_gpt_weights: "GPT_SoVITS/pretrained_models/s1v3.ckpt"
   fallback_sovits_weights: "GPT_SoVITS/pretrained_models/gsv-v5-pretrained/s2Gv5turbo.pth"
-  speed_factor: 1.22
-  pitch_shift: 1.08
+  speed_factor: 1.28
+  pitch_shift: 1.0
 
 video:
   width: 1080
   height: 1920
   fps: 24
   target_duration: 30.0
-  font_zh: "C:/Windows/Fonts/kaiu.ttf"
-  font_zh_bold: "C:/Windows/Fonts/msjhbd.ttc"
+  font_zh: "C:/Windows/Fonts/NotoSerifTC-VF.ttf"
+  font_zh_bold: "C:/Windows/Fonts/NotoSansTC-VF.ttf"
   font_en: "C:/Windows/Fonts/segoeprb.ttf"
 
 deploy:

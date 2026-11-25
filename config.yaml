@@ -1,8 +1,8 @@
 # SoundWeavers Music Tech News Pipeline Configuration
 
 site:
-  title: "SoundWeavers 音樂科技播報"
-  subtitle: "每日音樂科技、新產品與音訊技術深度速報"
+  title: "SoundWeavers 音樂科技新聞"
+  subtitle: "音樂科技、新產品與音訊技術深度速報"
   output_dir: "site"
   data_file: "site/data/news.json"
   media_dir: "site/media"
@@ -50,11 +50,11 @@ tts:
   sovits_weights_dir: "SoVITS_weights_v5turbo"
   fallback_gpt_weights: "GPT_SoVITS/pretrained_models/s1v3.ckpt"
   fallback_sovits_weights: "GPT_SoVITS/pretrained_models/gsv-v5-pretrained/s2Gv5turbo.pth"
-  speed_factor: 1.05
+  speed_factor: 1.08
   fragment_interval: 0.15
   temperature: 0.75
   top_k: 10
-  sample_steps: 32
+  sample_steps: 16
   pitch_shift: 1.0
   audio_cleanup: true
 

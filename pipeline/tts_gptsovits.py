@@ -244,11 +244,8 @@ def synthesize_tts(
         if abs(pitch_shift - 1.0) > 0.01:
             filters.append(f"asetrate=48000*{pitch_shift},aresample=48000")
         if tts_cfg.get("audio_cleanup", True):
-            filters.append(
-                "highpass=f=85,lowpass=f=11000,afftdn=nf=-25,"
-                "acompressor=threshold=-18dB:ratio=2.5:attack=10:release=120,"
-                "loudnorm=I=-16:TP=-1.5:LRA=11"
-            )
+            # Gentle broadcast EQ only (no aggressive FFT denoiser that can eat speech)
+            filters.append("highpass=f=80,lowpass=f=12000")
         if filters:
             try:
                 import imageio_ffmpeg

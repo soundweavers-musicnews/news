@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T06:59:38.364585+00:00",
+  "updated_at": "2026-11-25T07:09:21.824937+00:00",
   "site": {
     "title": "SoundWeavers 音樂科技新聞",
     "subtitle": "音樂科技、新產品與音訊技術深度速報"
@@ -36,10 +36,10 @@
         "C:/Users/timmychi/.gemini/antigravity/brain/2d7c3439-1ee3-4ddf-81ee-d65ab7753817/scene_4_1795588405656.jpg"
       ],
       "analyzed_by": "Antigravity",
-      "fetched_at": "2026-11-25T06:57:09.428409+00:00",
+      "fetched_at": "2026-11-25T07:06:49.089458+00:00",
       "video_url": "./media/20261125_e849c59c5aff.mp4",
       "audio_url": "./media/20261125_e849c59c5aff.wav",
-      "video_duration": 30.2,
+      "video_duration": 30.1,
       "tts_engine": "GPT-SoVITS-v5turbo"
     }
   ]

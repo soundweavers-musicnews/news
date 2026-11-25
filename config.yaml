@@ -46,11 +46,11 @@ tts:
   text_lang: "zh"
   # Will auto-detect custom weights inside GPT_weights_v5turbo / SoVITS_weights_v5turbo if present,
   # otherwise falls back to pretrained v5turbo weights:
-  gpt_weights_dir: "GPT_weights_v5turbo"
-  sovits_weights_dir: "SoVITS_weights_v5turbo"
+  gpt_weights_dir: "GPT_weights_v2ProPlus"
+  sovits_weights_dir: "SoVITS_weights_v2ProPlus"
   fallback_gpt_weights: "GPT_SoVITS/pretrained_models/s1v3.ckpt"
-  fallback_sovits_weights: "GPT_SoVITS/pretrained_models/gsv-v5-pretrained/s2Gv5turbo.pth"
-  speed_factor: 1.0
+  fallback_sovits_weights: "GPT_SoVITS/pretrained_models/v2Pro/s2Gv2ProPlus.pth"
+  speed_factor: 1.15
   fragment_interval: 0.15
   temperature: 0.75
   top_k: 10

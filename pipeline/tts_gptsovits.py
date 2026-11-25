@@ -173,10 +173,11 @@ def synthesize_tts(
             "prompt_lang": tts_cfg.get("prompt_lang", "zh"),
             "text_split_method": "cut5",
             "batch_size": 1,
-            "speed_factor": float(tts_cfg.get("speed_factor", 1.14)),
+            "speed_factor": float(tts_cfg.get("speed_factor", 1.05)),
             "fragment_interval": float(tts_cfg.get("fragment_interval", 0.15)),
-            "temperature": float(tts_cfg.get("temperature", 0.82)),
-            "top_k": int(tts_cfg.get("top_k", 12)),
+            "temperature": float(tts_cfg.get("temperature", 0.75)),
+            "top_k": int(tts_cfg.get("top_k", 10)),
+            "sample_steps": int(tts_cfg.get("sample_steps", 32)),
             "media_type": "wav",
             "streaming_mode": False,
         }
@@ -185,20 +186,32 @@ def synthesize_tts(
         if resp.status_code != 200:
             raise RuntimeError(f"HTTP {resp.status_code}: {resp.text[:300]}")
         output_wav.write_bytes(resp.content)
+
+        # Studio broadcast vocal cleanup: remove vocoder buzz/hum & normalize loudness
+        filters: list[str] = []
         pitch_shift = float(tts_cfg.get("pitch_shift", 1.0))
         if abs(pitch_shift - 1.0) > 0.01:
-            shifted = output_wav.with_suffix(".shifted.wav")
+            filters.append(f"asetrate=48000*{pitch_shift},aresample=48000")
+        if tts_cfg.get("audio_cleanup", True):
+            filters.append(
+                "highpass=f=85,lowpass=f=11000,afftdn=nf=-25,"
+                "acompressor=threshold=-18dB:ratio=2.5:attack=10:release=120,"
+                "loudnorm=I=-16:TP=-1.5:LRA=11"
+            )
+        if filters:
+            cleaned = output_wav.with_suffix(".clean.wav")
             subprocess.run(
                 [
                     "ffmpeg", "-y", "-i", str(output_wav),
-                    "-af", f"asetrate=48000*{pitch_shift},aresample=48000",
-                    str(shifted),
+                    "-af", ",".join(filters),
+                    "-ar", "48000", "-ac", "1", "-c:a", "pcm_s16le",
+                    str(cleaned),
                 ],
                 check=True,
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.DEVNULL,
             )
-            shifted.replace(output_wav)
+            cleaned.replace(output_wav)
         print(f"[tts] Saved synthesized audio -> {output_wav}")
         return output_wav, True
     except Exception as exc:

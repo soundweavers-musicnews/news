@@ -134,6 +134,8 @@ def generate_placeholder_audio(output_wav: Path, duration: float = 30.0) -> Path
 TTS_FIXES = {
     "AKAI": "Ah kai",
     "Akai": "Ah kai",
+    "MIDI": "Middy",
+    "Tubbutec": "Tubbu tech",
     "VST2": "VST two",
     "VST3": "VST three",
     "16階音階": "十六段音阶",

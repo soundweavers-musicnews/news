@@ -286,6 +286,7 @@ def render_handdrawn_video(
         "-i", "-",
         "-i", str(wav_path),
         "-c:v", "libx264",
+        "-threads", "1",
         "-preset", "veryfast",
         "-crf", "23",
         "-pix_fmt", "yuv420p",

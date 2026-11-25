@@ -177,7 +177,6 @@ def synthesize_tts(
             "fragment_interval": float(tts_cfg.get("fragment_interval", 0.15)),
             "temperature": float(tts_cfg.get("temperature", 0.75)),
             "top_k": int(tts_cfg.get("top_k", 10)),
-            "sample_steps": int(tts_cfg.get("sample_steps", 32)),
             "media_type": "wav",
             "streaming_mode": False,
         }

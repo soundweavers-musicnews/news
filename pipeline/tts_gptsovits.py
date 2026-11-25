@@ -152,8 +152,19 @@ POLYPHONE_FIXES = {
 }
 
 
+def _to_simplified(text: str) -> str:
+    """Convert Traditional Chinese to Simplified Chinese so GPT-SoVITS's native polyphone G2P matches accurately."""
+    if not text:
+        return text
+    try:
+        import opencc
+        return opencc.OpenCC("t2s").convert(text)
+    except Exception:
+        return text
+
+
 def normalize_tts_text(text: str) -> str:
-    """Normalize music-tech brands, acronyms, numbers, and polyphones for clean Chinese TTS."""
+    """Normalize music-tech brands, acronyms, numbers, and convert to Simplified for clean GPT-SoVITS G2P."""
     out = text
     for src, dst in POLYPHONE_FIXES.items():
         out = out.replace(src, dst)
@@ -169,7 +180,8 @@ def normalize_tts_text(text: str) -> str:
     # Add light pause around English words embedded in Chinese so leading vowels are never swallowed
     out = re.sub(r"([\u4e00-\u9fff])([A-Za-z])", r"\1 \2", out)
     out = re.sub(r"([A-Za-z])([\u4e00-\u9fff])", r"\1 \2", out)
-    return re.sub(r"\s+", " ", out).strip()
+    out = re.sub(r"\s+", " ", out).strip()
+    return _to_simplified(out)
 
 
 def synthesize_tts(
@@ -209,7 +221,7 @@ def synthesize_tts(
             "text": tts_text,
             "text_lang": tts_cfg.get("text_lang", "auto"),
             "ref_audio_path": str(ref_wav),
-            "prompt_text": tts_cfg.get("prompt_text", ""),
+            "prompt_text": _to_simplified(tts_cfg.get("prompt_text", "")),
             "prompt_lang": tts_cfg.get("prompt_lang", "zh"),
             "text_split_method": "cut5",
             "batch_size": 1,
@@ -238,10 +250,15 @@ def synthesize_tts(
                 "loudnorm=I=-16:TP=-1.5:LRA=11"
             )
         if filters:
+            try:
+                import imageio_ffmpeg
+                ff_bin = imageio_ffmpeg.get_ffmpeg_exe()
+            except Exception:
+                ff_bin = "ffmpeg"
             cleaned = output_wav.with_suffix(".clean.wav")
             subprocess.run(
                 [
-                    "ffmpeg", "-y", "-i", str(output_wav),
+                    ff_bin, "-y", "-i", str(output_wav),
                     "-af", ",".join(filters),
                     "-ar", "48000", "-ac", "1", "-c:a", "pcm_s16le",
                     str(cleaned),

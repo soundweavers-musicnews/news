@@ -1,10 +1,444 @@
 {
-  "updated_at": "2026-11-25T11:48:44.400640+00:00",
+  "updated_at": "2026-11-28T13:55:05.873480+00:00",
   "site": {
     "title": "SoundWeavers 音樂科技新聞",
     "subtitle": "音樂科技、新產品與音訊技術深度速報"
   },
   "items": [
+    {
+      "id": "b477f6c05b47",
+      "title": "AIR Vocal Distortion is now FREE for Black Friday",
+      "url": "https://bedroomproducersblog.com/2026/11/28/air-vocal-distortion-free/",
+      "source": "Bedroom Producers Blog",
+      "published_at": "2026-11-28T08:00:00+00:00",
+      "publish_at": "2026-12-09T08:30:00+08:00",
+      "title_zh": "AIR Vocal Distortion 限時免費領取：專為人聲設計的創意破音與染色",
+      "category": "插件工具",
+      "summary": "AIR Music Technology 宣布旗下人聲專屬破音外掛 AIR Vocal Distortion 開放限時免費領取，內建從微溫磁帶飽和到復古電話、電台 Lo-Fi 與重度電子嘶吼的多元人聲失真風格。",
+      "highlights": [
+        "AIR Music Technology 限時免費釋出 AIR Vocal Distortion 人聲破音外掛",
+        "專為人聲頻段量身調校，避免一般吉他破音造成唇齒音過於刺耳的問題",
+        "內建濕乾比混合與頻段塑形，從細微存在感到實驗 Lo-Fi 人聲都能輕鬆搞定"
+      ],
+      "tech_analysis": "直接將吉他破音掛在人聲上往往會讓 4kHz–8kHz 的齒音爆裂刺耳。AIR Vocal Distortion 採用前置頻段過濾（Pre-Emphasis Filtering）搭配專屬軟／硬削波曲線與平行混合控制，能在保留歌詞清晰咬字的前提下，賦予人聲強烈的現代搖滾、Hyperpop 與復古電台質感。",
+      "broadcast_script": "隔壁織音人音樂科技速報！想幫人聲加點個性破音或復古電話感嗎？AIR Music Technology 開放 AIR Vocal Distortion 限時免費領取！專為人聲頻段調校，完全不怕齒音炸裂，從溫暖飽和到前衛 Lo-Fi 失真都能輕鬆調出來！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "AIR Music Technology",
+        "人聲破音",
+        "免費外掛",
+        "人聲混音",
+        "Lo-Fi"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:53:59.377872+00:00",
+      "video_url": "./media/20261209_b477f6c05b47.mp4",
+      "audio_url": null,
+      "video_duration": 24.9,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "06a288c74690",
+      "title": "Audio Assault offers MrShall 2026BF Marshall-style amp sim FREE for Black Friday",
+      "url": "https://bedroomproducersblog.com/2026/11/28/audio-assault-mrshall-2026bf/",
+      "source": "Bedroom Producers Blog",
+      "published_at": "2026-11-28T07:00:00+00:00",
+      "publish_at": "2026-12-09T08:30:00+08:00",
+      "title_zh": "Audio Assault 免費推出 MrShall 2026BF：改裝版 Marshall 經典音箱模擬",
+      "category": "插件工具",
+      "summary": "音箱模擬品牌 Audio Assault 免費釋出 MrShall 2026BF 吉他音箱外掛，以客製化改裝版的傳奇英倫音箱 Marshall JMP 2204 為藍本，帶來經典緊實中頻咆哮與高增益搖滾金屬破音。",
+      "highlights": [
+        "Audio Assault 免費釋出 MrShall 2026BF 英倫經典音箱模擬外掛",
+        "以客製改裝版 Marshall JMP 2204 為原型，兼顧經典搖滾顆粒與現代高增益",
+        "內建箱體模擬（IR）與精簡直覺控制面板，吉他插上錄音介面就能立刻開飆"
+      ],
+      "tech_analysis": "Marshall JMP 2204 是 70 至 80 年代硬式搖滾與重金屬的標誌性主音量真空管音箱，改裝版更常加入額外增益級以強化緊實低頻與延音。MrShall 2026BF 透過非線性前級與後級變壓器建模，搭配內建箱體脈衝響應（Impulse Response），讓居家錄音室零成本就能重現經典英倫搖滾咆哮音色。",
+      "broadcast_script": "隔壁織音人音樂科技速報！吉他手又有免費好康可以收啦！Audio Assault 免費推出 MrShall 2026BF 音箱模擬外掛，以改裝版傳奇 Marshall JMP 2204 為藍本，從經典英倫搖滾顆粒到現代高增益金屬咆哮都超有爆發力，插上電腦馬上開飆！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Audio Assault",
+        "Marshall",
+        "吉他音箱模擬",
+        "免費外掛",
+        "搖滾金屬"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:55:05.873480+00:00",
+      "video_url": "./media/20261209_06a288c74690.mp4",
+      "audio_url": null,
+      "video_duration": 29.4,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "d5daefb720e1",
+      "title": "Waves offers Rogue Pre-Focus analog preamp plugin FREE for Black Friday",
+      "url": "https://bedroomproducersblog.com/2026/11/26/waves-rogue-pre-focus/",
+      "source": "Bedroom Producers Blog",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "publish_at": "2026-12-08T08:30:00+08:00",
+      "title_zh": "Waves 釋出全新免費類比前級 Rogue Pre-Focus：內建六種經典染色模式",
+      "category": "插件工具",
+      "summary": "音訊外掛大廠 Waves 推出全新免費類比麥克風前級外掛 Rogue Pre-Focus，一口氣提供六種不同風格的類比電路染色與聚焦塑形模式，幫數位錄音快速增添厚實泛音與混音穿透力。",
+      "highlights": [
+        "Waves 推出全新類比前級染色外掛 Rogue Pre-Focus，限時免費領取",
+        "內建六種可切換的經典前級與音色聚焦模型，從微溫染色到顆粒飽滿通通有",
+        "操作直覺輕量，適合直接掛在人聲、鼓組母線或吉他軌道前端快速定調"
+      ],
+      "tech_analysis": "數位錄音介面雖然底噪極低且頻響平直，但常缺乏傳統類比控台前級的偶次／奇次諧波飽和與變壓器低頻緊實感。Rogue Pre-Focus 結合非線性飽和建模與中頻聚焦 EQ 曲線，能在幾乎不耗費 CPU 的情況下，迅速讓主奏樂器與人聲在擁擠的混音中自然往前站出來。",
+      "broadcast_script": "隔壁織音人音樂科技速報！Waves 又來送免費新外掛啦！全新登場的 Rogue Pre-Focus 是一款類比前級染色外掛，內建六種經典前級與聚焦模型，隨手掛在人聲、吉他或鼓組上，就能立刻幫平淡的數位錄音加上暖厚泛音跟混音穿透力！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Waves",
+        "Rogue Pre-Focus",
+        "類比前級",
+        "免費外掛",
+        "混音染色"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:52:00.925865+00:00",
+      "video_url": "./media/20261208_d5daefb720e1.mp4",
+      "audio_url": null,
+      "video_duration": 26.8,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "58cb53caed9f",
+      "title": "Karanyi Sounds releases Brigade vocal multiplier as a FREE download",
+      "url": "https://bedroomproducersblog.com/2026/11/28/karanyi-sounds-brigade/",
+      "source": "Bedroom Producers Blog",
+      "published_at": "2026-11-28T06:00:00+00:00",
+      "publish_at": "2026-12-08T08:30:00+08:00",
+      "title_zh": "Karanyi Sounds 免費送 Brigade：一鍵加厚立體人聲合聲外掛",
+      "category": "插件工具",
+      "summary": "Karanyi Sounds 宣布釋出全新免費人聲倍增外掛 Brigade，支援 macOS 與 Windows，只要一顆大旋鈕就能將單軌乾人聲化為寬廣飽滿的多重合聲與副歌人聲牆，大幅省去重複錄製疊軌的時間。",
+      "highlights": [
+        "Karanyi Sounds 釋出免費人聲倍增（Vocal Multiplier）外掛 Brigade",
+        "透過微細音高偏移與時間延遲演算法，瞬間打造寬廣立體的副歌人聲厚度",
+        "介面極簡好上手，同時也適合拿來加寬吉他、合成器主奏與背景和聲"
+      ],
+      "tech_analysis": "人聲倍增器（Doubler／Multiplier）要聽起來像真實多人疊唱而非呆板的合唱效果（Chorus），核心在於引入非週期性的微小時間飄移（Micro-Timing Drift）、獨立聲像分布與共振峰保護。Brigade 在單聲道相容性與立體聲寬度之間取得極佳平衡，讓獨立創作者用單一麥克風錄音也能做出流行大歌的副歌氣勢。",
+      "broadcast_script": "隔壁織音人音樂科技速報！錄副歌想疊人聲又不想唱十遍嗎？Karanyi Sounds 免費推出全新人聲倍增外掛 Brigade！只要輕鬆一轉，就能把單軌人聲瞬間加厚成超寬廣的立體聲合聲牆，拿來加寬吉他跟合成器也超好用！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Karanyi Sounds",
+        "Brigade",
+        "人聲合聲",
+        "免費外掛",
+        "立體聲加寬"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:53:00.227736+00:00",
+      "video_url": "./media/20261208_58cb53caed9f.mp4",
+      "audio_url": null,
+      "video_duration": 24.9,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "09f2c81aeec6",
+      "title": "Little Wave Machine Adds 13 Morphing Oscillator Types To A Subtractive Synth",
+      "url": "https://www.synthtopia.com/content/2026/11/26/little-wave-machine-adds-13-morphing-oscillator-types-to-a-subtractive-synth/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-26T20:00:00+00:00",
+      "publish_at": "2026-12-07T08:30:00+08:00",
+      "title_zh": "Little Wave Machine 發表：搭載 13 種變形振盪器的現代減法合成器",
+      "category": "插件工具",
+      "summary": "Snorkel Audio 推出全新合成器外掛 Little Wave Machine，在經典減法合成架構中融入三組支援 13 種波形變形（Morphing）的振盪器與雙共振濾波器，輕鬆在溫暖復古與前衛電子音色間自由切換。",
+      "highlights": [
+        "配備三組可即時連續變形的振盪器，內建多達 13 種現代與經典波形模式",
+        "搭載雙共振濾波器（Dual Resonant Filters）與豐富調變矩陣",
+        "介面簡潔直覺，讓經典減法合成器擁有媲美波表合成的動態音色張力"
+      ],
+      "tech_analysis": "傳統減法合成器多受限於鋸齒波、方波與三角波等靜態波形。Little Wave Machine 透過即時波形塑形與相位變形演算法（Wave-Morphing），在振盪器源頭就先創造出豐富的動態泛音結構，再送入雙組可串並聯的共振濾波器雕琢，大幅擴展單一減法合成器的音色頻譜廣度。",
+      "broadcast_script": "隔壁織音人音樂科技速報！喜歡減法合成器又想要更豐富的動態音色嗎？Snorkel Audio 推出全新外掛 Little Wave Machine，內建三組支援十三種變形波形的振盪器，搭配雙共振濾波器與調變系統，讓你隨手就能捏出從復古暖聲到前衛電音的百變音色！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Little Wave Machine",
+        "減法合成器",
+        "變形振盪器",
+        "濾波器",
+        "合成器外掛"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:49:53.991801+00:00",
+      "video_url": "./media/20261207_09f2c81aeec6.mp4",
+      "audio_url": null,
+      "video_duration": 28.3,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "39fcdfdb2d8d",
+      "title": "Sacred Audio releases Mantra, a FREE LFO shaper and trance gate for macOS and Windows",
+      "url": "https://bedroomproducersblog.com/2026/11/26/sacred-audio-mantra/",
+      "source": "Bedroom Producers Blog",
+      "published_at": "2026-11-26T18:00:00+00:00",
+      "publish_at": "2026-12-07T08:30:00+08:00",
+      "title_zh": "Sacred Audio 推出免費外掛 Mantra：專攻 LFO 塑形與迷幻 Trance Gate",
+      "category": "插件工具",
+      "summary": "Sacred Audio 釋出完全免費的節奏塑形外掛 Mantra，結合精準繪圖式 LFO 音量塑形與經典 Trance Gate 閘門切割功能，專為滾動式 Psytrance 低音、側鏈抽吸感與電音律動打造，支援 macOS 與 Windows。",
+      "highlights": [
+        "完全免費的 LFO 塑形器與 Trance Gate 外掛，支援 macOS 與 Windows",
+        "可快速做出精準對拍的 Sidechain 側鏈抽吸感與滾動式電音 Bassline",
+        "透過自訂包絡線曲線，一鍵把長音 Pad 變成極具推進力的節奏律動"
+      ],
+      "tech_analysis": "在現代電子音樂混音中，以宿主速度同步的 LFO 音量塑形（Volume Shaper）常比傳統壓縮器側鏈更精準且零底鼓相位殘留。Mantra 透過可繪製的平滑貝茲包絡線與零交叉平滑過渡，避免快速 Trance Gate 切割產生的喀答聲（Clicks），是電音製作人極實用的免費律動利器。",
+      "broadcast_script": "隔壁織音人音樂科技速報！免費電音律動神器來報到！Sacred Audio 推出完全免費的外掛 Mantra，把精準 LFO 塑形器跟經典 Trance Gate 合而為一，不管是做側鏈抽吸感、滾動低音還是幫長音 Pad 加上迷幻切分節奏，一鍵就超有律動感！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Mantra",
+        "免費外掛",
+        "LFO 塑形",
+        "Trance Gate",
+        "電子音樂"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:50:56.290806+00:00",
+      "video_url": "./media/20261207_39fcdfdb2d8d.mp4",
+      "audio_url": null,
+      "video_duration": 25.9,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "421f06507f53",
+      "title": "Behringer CS Mini: Available now!",
+      "url": "https://www.gearnews.com/behringer-cs-mini-available-now/",
+      "source": "Gearnews",
+      "published_at": "2026-11-27T09:00:00+00:00",
+      "publish_at": "2026-12-06T08:30:00+08:00",
+      "title_zh": "等了四年半！Behringer CS Mini 迷你類比合成器終於正式開賣",
+      "category": "硬體合成器",
+      "summary": "自預告以來讓合成器玩家苦等四年半的 Behringer CS Mini 終於正式上市開賣！這款致敬傳奇 Yamaha CS 系列的口袋型類比合成器，以極致親民價位帶來經典 70 年代溫潤銅管與電影感類比音色。",
+      "highlights": [
+        "歷經四年半漫長等待，Behringer CS Mini 終於正式開放訂購出貨",
+        "濃縮經典 Yamaha CS 系列類比架構，主打電影感暖厚 Pad 與合成銅管音色",
+        "輕巧迷你鍵盤機身搭配親民定價，成為入門實體類比合成器的新選擇"
+      ],
+      "tech_analysis": "經典 Yamaha CS 系列（如 CS-80）之所以備受影視配樂家推崇，關鍵在於其獨特的 12dB 串聯高通／低通濾波器（HPF + LPF）設計，能塑造出極具表現力且不混濁的有機頻譜。CS Mini 將核心純類比訊號路徑微縮進超精簡桌機尺寸，並保留現代 MIDI 與 USB 整合，讓經典電影配樂音色變得觸手可及。",
+      "broadcast_script": "隔壁織音人音樂科技速報！讓合成器玩家苦等整整四年半的 Behringer CS Mini 終於正式開賣啦！這款致敬傳奇 Yamaha CS 系列的口袋型純類比合成器，主打七零年代超暖厚的電影配樂與銅管音色，體積迷你價格又超親民！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Behringer",
+        "CS Mini",
+        "類比合成器",
+        "Yamaha CS",
+        "硬體發表"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:47:43.563410+00:00",
+      "video_url": "./media/20261206_421f06507f53.mp4",
+      "audio_url": null,
+      "video_duration": 24.1,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "46b26bdd6767",
+      "title": "Waveboard iPad Modular Synth Returns as a Free Download",
+      "url": "https://www.synthtopia.com/content/2026/11/27/waveboard-ipad-modular-synth-returns-as-a-free-download/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-27T08:00:00+00:00",
+      "publish_at": "2026-12-06T08:30:00+08:00",
+      "title_zh": "經典回歸免費載！Waveboard iPad 觸控模組化合成器全面重製上線",
+      "category": "產品發表",
+      "summary": "開發者 Luke Bradford 全面重寫 2012 年經典 iPad 觸控跳線模組化合成器 Waveboard，並以完全免費形式重新上架！新版內建 30 組可自由編輯的樂器模組，用手指就能直覺拉線構築個人合成器。",
+      "highlights": [
+        "2012 年經典 iPad 觸控模組合成器 Waveboard 全面現代化重製回歸",
+        "改採完全免費下載，內建 30 組可自由編輯與串接的聲音模組",
+        "專為觸控螢幕最佳化的視覺化跳線（Touch-Patching），零門檻入門模組化合成"
+      ],
+      "tech_analysis": "模組化合成的學習曲線往往高昂且硬體所費不貲，Waveboard 透過 iPad 多點觸控介面，把振盪器、濾波器、包絡線與調變器之間的訊號路由視覺化，讓學習者能即時看到並聽到每一條虛擬跳線如何改變波形。全面重構後的現代音訊引擎也確保了低延遲即時觸控演奏體驗。",
+      "broadcast_script": "隔壁織音人音樂科技速報！iPad 免費好物再加一！二零一二年經典的觸控模組化合成器 Waveboard 全面重製回歸，而且現在完全免費下載！內建三十組可自由編輯的合成模組，用手指拉線就能親手組裝專屬合成器，超適合想入門模組合成的朋友！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Waveboard",
+        "iPad 合成器",
+        "模組化合成器",
+        "免費 App",
+        "音色設計"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:48:46.965125+00:00",
+      "video_url": "./media/20261206_46b26bdd6767.mp4",
+      "audio_url": null,
+      "video_duration": 27.0,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "5123667f2503",
+      "title": "Mooer GTRS Wing 1000: Intelligent Headless Guitar with NAM!",
+      "url": "https://www.gearnews.com/mooer-gtrs-wing-1000-intelligent-headless-guitar-with-nam/",
+      "source": "Gearnews",
+      "published_at": "2026-11-27T12:00:00+00:00",
+      "publish_at": "2026-12-05T08:30:00+08:00",
+      "title_zh": "Mooer GTRS Wing 1000 智慧無頭電吉他登場：原生支援 NAM 音箱檔",
+      "category": "產品發表",
+      "summary": "Mooer 發表新一代智慧無頭電吉他 GTRS Wing 1000，除了極致輕量好攜帶的無頭琴身設計，最大亮點是原生支援開源神經音箱建模格式 NAM（Neural Amp Modeler），並整合無線連線與 USB-C 錄音介面。",
+      "highlights": [
+        "琴身內建智慧 DSP 系統並首度原生支援開源 NAM 神經音箱建模檔案",
+        "採現代無頭電吉他（Headless）設計，大幅減輕重量且調音更穩定",
+        "整合無線傳輸與 USB-C 直接錄音，一把吉他就能搞定練琴、直播與錄音室工作"
+      ],
+      "tech_analysis": "NAM（Neural Amp Modeler）已成為開源吉他神經網路音箱模擬的黃金標準，過去受限於類神經推論算力多只能在電腦或少數高階效果器運行。GTRS Wing 1000 直接在琴身嵌入式晶片內建輕量化神經推論引擎，讓吉他手能免費載入社群數萬組真實音箱模型，徹底顛覆傳統效果器盤與音箱頭的硬體邊界。",
+      "broadcast_script": "隔壁織音人音樂科技速報！電吉他也能直接跑開源神經音箱模擬啦！Mooer 推出全新無頭智慧吉他 GTRS Wing 1000，不只超輕巧、內建無線跟 USB 錄音，最大亮點是原生支援 NAM 神經音箱檔，背一把琴出門就能帶上整個社群的夢幻名箱！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Mooer",
+        "GTRS Wing 1000",
+        "NAM",
+        "智慧吉他",
+        "無頭電吉他"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:45:45.163098+00:00",
+      "video_url": "./media/20261205_5123667f2503.mp4",
+      "audio_url": null,
+      "video_duration": 29.3,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "6ec915a6b8d3",
+      "title": "Tamber Gestures lets you play synths with your webcam, now $39.99 for Black Friday",
+      "url": "https://bedroomproducersblog.com/2026/11/27/tamber-gestures/",
+      "source": "Bedroom Producers Blog",
+      "published_at": "2026-11-27T10:00:00+00:00",
+      "publish_at": "2026-12-05T08:30:00+08:00",
+      "title_zh": "用視訊鏡頭隔空彈合成器！Tamber Gestures 打造全新體感演奏體驗",
+      "category": "AI 音樂",
+      "summary": "Tamber 推出創新體感音樂外掛 Gestures，只需使用電腦原本的視訊鏡頭（Webcam），就能透過即時手勢與肢體動作控制合成器音高、濾波器與效果參數，免買昂貴感測器也能像特雷門琴般隔空演奏。",
+      "highlights": [
+        "免額外硬體感測器，直接用筆電或桌機視訊鏡頭即可進行體感音樂控制",
+        "將雙手高度、開合與移動速度即時映射至 MIDI CC 與效果器參數",
+        "支援 macOS 與 Windows 宿主環境，為現場視覺演出與實驗音色增添互動感"
+      ],
+      "tech_analysis": "Tamber Gestures 背後運用輕量化電腦視覺關鍵點追蹤（Computer Vision Hand Landmark Tracking），以低延遲即時擷取手部空間座標並平滑濾波為連續控制訊號（MIDI CC／自動化參數）。這種無接觸式控制介面突破傳統鍵盤與旋鈕的物理限制，特別適合現場氛圍控制與聲響藝術表演。",
+      "broadcast_script": "隔壁織音人音樂科技速報！不用買昂貴體感硬體，現在用電腦視訊鏡頭就能隔空玩合成器！Tamber 推出創意體感外掛 Gestures，直接靠鏡頭即時追蹤你的手勢跟動作，揮揮手就能控制濾波器、殘響跟音色變化，現場演出超吸睛！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Tamber Gestures",
+        "體感演奏",
+        "電腦視覺",
+        "MIDI 控制",
+        "AI 音樂"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:46:47.490269+00:00",
+      "video_url": "./media/20261205_6ec915a6b8d3.mp4",
+      "audio_url": null,
+      "video_duration": 25.3,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "c3b48076b194",
+      "title": "Open-Source MTRX-1K Recreates The Classic Oberheim Matrix-1000",
+      "url": "https://www.synthtopia.com/content/2026/11/27/open-source-mtrx-1k-recreates-the-classic-oberheim-matrix-1000/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-27T16:00:00+00:00",
+      "publish_at": "2026-12-04T08:30:00+08:00",
+      "title_zh": "開源專案 MTRX-1K 登場：直接執行原廠韌體復刻 Oberheim Matrix-1000",
+      "category": "硬體合成器",
+      "summary": "開源社群發表全新復刻合成器 MTRX-1K，透過直接模擬執行八零年代經典機架合成器 Oberheim Matrix-1000 的原始微處理器韌體，並一舉升級至 24 複音與直覺圖形化音色編輯介面。",
+      "highlights": [
+        "開源復刻 Oberheim Matrix-1000，直接執行原機經典控制韌體還原靈魂",
+        "將原機 6 複音大幅擴展至最高 24 複音，同時保留溫厚類比音色質感",
+        "擺脫老機缺乏旋鈕的編輯惡夢，內建完整現代化視覺調變矩陣編輯器"
+      ],
+      "tech_analysis": "傳統軟體復刻多半以黑箱聽感近似建模，而 MTRX-1K 採用「韌體層級模擬（Firmware Emulation）」直接跑出原機 6809 微處理器運算的包絡線、LFO 與調變矩陣邏輯，再搭配精準建模的 CEM3396 類比振盪器與濾波晶片響應，達成極高還原度並徹底解決老式機架無介面可調的痛點。",
+      "broadcast_script": "隔壁織音人音樂科技速報！開源合成器黑科技再加一！全新專案 MTRX-1K 直接透過模擬執行原廠韌體，完美復刻八零年代經典名機 Oberheim Matrix-1000！不只音色超原汁原味，還一口氣升級到二十四複音跟超好調的現代圖形介面！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "MTRX-1K",
+        "Oberheim",
+        "開源合成器",
+        "韌體模擬",
+        "復古音色"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:43:28.927515+00:00",
+      "video_url": "./media/20261204_c3b48076b194.mp4",
+      "audio_url": null,
+      "video_duration": 27.6,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "86c97a926f98",
+      "title": "Push & Groove Releases Beadscape Core Free Granular Plugin, Based on Mutable Instruments Beads",
+      "url": "https://www.synthtopia.com/content/2026/11/27/push-groove-releases-beadscape-core-free-granular-plugin-based-on-mutable-instruments-beads/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-27T14:00:00+00:00",
+      "publish_at": "2026-12-04T08:30:00+08:00",
+      "title_zh": "免費顆粒合成器！BEADSCAPE CORE 把經典 Mutable Beads 搬進 DAW",
+      "category": "插件工具",
+      "summary": "Push & Groove 推出完全免費的顆粒音訊處理外掛 BEADSCAPE CORE，靈感源自歐規模組傳奇 Mutable Instruments Beads，支援即時音訊輸入切片、粒子重組與夢幻環境質地生成。",
+      "highlights": [
+        "免費將傳奇 Eurorack 模組 Mutable Instruments Beads 的顆粒核心搬進電腦 DAW",
+        "支援即時音訊輸入（Live Audio Input），可將任何吉他、人聲或鼓組化為星塵紋理",
+        "提供直覺的粒子密度、音高與音色質地控制，輕鬆做出電影配樂與 Ambient 氛圍"
+      ],
+      "tech_analysis": "Beads 是經典 Clouds 模組的次世代接班作，以高解析度即時環狀緩衝區（Circular Buffer）搭配多種音色建模模式（磁帶、類比、數位顆粒）聞名。BEADSCAPE CORE 將這套即時粒子切片與重疊相加（Overlap-Add）演算法封裝為輕量 DAW 外掛，讓沒有硬體模組的製作人也能免費享有頂級歐規音色設計能力。",
+      "broadcast_script": "隔壁織音人音樂科技速報！免費歐規神器來啦！Push and Groove 推出免費顆粒效果器 BEADSCAPE CORE，把傳奇模組 Mutable Instruments Beads 的靈魂直接搬進 DAW，支援即時音訊輸入，隨便丟進一段吉他或人聲就能變成超夢幻的環境音牆！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "BEADSCAPE CORE",
+        "顆粒合成",
+        "Mutable Instruments",
+        "免費外掛",
+        "Ambient"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:44:36.405052+00:00",
+      "video_url": "./media/20261204_86c97a926f98.mp4",
+      "audio_url": null,
+      "video_duration": 29.0,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "ebd965d3f775",
+      "title": "Ableton Live 13 arrives in early 2027, a major update without AI?",
+      "url": "https://bedroomproducersblog.com/2026/11/28/ableton-live-13/",
+      "source": "Bedroom Producers Blog",
+      "published_at": "2026-11-28T10:00:00+00:00",
+      "publish_at": "2026-12-03T08:30:00+08:00",
+      "title_zh": "Ableton Live 13 預告 2027 初登場：堅持不塞入 AI 的重大改版？",
+      "category": "產品發表",
+      "summary": "備受電子音樂與製作人關注的 Ableton Live 13 傳出將於 2027 年初正式發布，引發討論焦點在於新版本可能反其道而行，刻意不導入生成式 AI 功能，而是專注深化編曲工作流、音訊引擎與創作者主導權。",
+      "highlights": [
+        "Ableton Live 13 預計 2027 年初推出，成為近年最受矚目的 DAW 大改版",
+        "在業界競相導入 AI 自動作曲之際，傳出將維持「以人為本」的無 AI 創作哲學",
+        "核心重心回歸編曲介面、即時演出穩定度與創意音訊處理工具進化"
+      ],
+      "tech_analysis": "當各大 DAW 紛紛整合雲端 AI 生成音軌與自動和聲時，Ableton 選擇強調人類演奏與即時互動的創作本質，反而形成鮮明產品差異化。對專業製作人而言，免去龐大 AI 模型佔用的記憶體與版權爭議，將算力專注於低延遲 DSP 引擎、Session View 演出流暢度與 Max for Live 生態整合，更具長遠實務價值。",
+      "broadcast_script": "隔壁織音人音樂科技速報！編曲界超重磅消息，Ableton Live 13 傳出將在二零二七年初登場，而且竟然可能主打「不塞入生成式 AI」的重大改版！在各大軟體狂推自動作曲的潮流下，Ableton 堅持把主導權留給真實音樂人，專心強化編曲引擎與演出手感。想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "Ableton Live 13",
+        "DAW",
+        "AI 音樂",
+        "編曲軟體",
+        "音樂製作"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:41:21.543886+00:00",
+      "video_url": "./media/20261203_ebd965d3f775.mp4",
+      "audio_url": null,
+      "video_duration": 29.5,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
+    {
+      "id": "04799eed731b",
+      "title": "Free ValhallaSupermassive 6.0 Adds New Reverb Mode",
+      "url": "https://www.synthtopia.com/content/2026/11/27/free-valhallasupermassive-6-0-adds-new-reverb-mode/",
+      "source": "Synthtopia",
+      "published_at": "2026-11-27T18:00:00+00:00",
+      "publish_at": "2026-12-03T08:30:00+08:00",
+      "title_zh": "神級免費殘響再進化！ValhallaSupermassive 6.0 新增自然稠密演算法",
+      "category": "插件工具",
+      "summary": "製作人必裝的免費宇宙級殘響外掛 ValhallaSupermassive 推出 6.0 免費更新，全新加入更稠密且聽感自然的殘響演算法模式，從寬廣的電影配樂空間到細膩的人聲包覆感都能輕鬆駕馭。",
+      "highlights": [
+        "Valhalla DSP 佛心釋出 6.0 免費大更新，新增高密度自然殘響模式",
+        "突破以往偏重超現實長尾延遲的印象，能調出更貼近真實空間的滑順尾音",
+        "支援 Windows 與 macOS 主流外掛格式，CPU 佔用率依舊極度輕量"
+      ],
+      "tech_analysis": "ValhallaSupermassive 採用多組調變反饋延遲網路（Modulated Feedback Delay Network）架構，過去以極端龐大的星際空間感著稱。6.0 新演算法透過更密集的早期反射擴散矩陣與阻尼濾波設計，減少了長延遲常見的金屬顆粒回音，讓這款免費神器也能勝任流行人聲與原聲樂器的自然空間融合。",
+      "broadcast_script": "隔壁織音人音樂科技速報！每位製作人電腦裡必裝的免費殘響神器 ValhallaSupermassive 推出 6.0 更新啦！這次全新加入更稠密又自然的殘響演算法，不只原本超夢幻的宇宙大空間，現在拿來處理人聲跟原聲樂器也超滑順，而且依舊完全免費！想看完整技術分析，記得往下滑看看喔！",
+      "keywords": [
+        "ValhallaSupermassive",
+        "免費外掛",
+        "殘響 Reverb",
+        "混音工具",
+        "DSP"
+      ],
+      "analyzed_by": "Antigravity",
+      "fetched_at": "2026-11-28T13:42:24.605469+00:00",
+      "video_url": "./media/20261203_04799eed731b.mp4",
+      "audio_url": null,
+      "video_duration": 25.7,
+      "tts_engine": "GPT-SoVITS-v2ProPlus"
+    },
     {
       "id": "daee606fe87e",
       "title": "Fender’s monster Godzilla Telecaster is headed to a city near you – and it has an onboard distortion",
